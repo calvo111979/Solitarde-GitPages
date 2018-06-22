@@ -26,6 +26,21 @@ import CostumerService from './images/CustomerService.jpg'
 import GlogalLogistics from './images/GlobalLogistics.jpg'
 import InternationalSales from './images/InternationalSales.jpg'
 import Valuation from './images/Valuation.jpg'
+import FavIcon from './images/simple_logo.png'
+import Favicon from 'react-favicon';
+
+class Layout extends React.Component {
+  constructor(props){
+    super(props);
+    document.title = this.props.title;
+  }
+  render(){
+    return(
+      <div>
+      </div>
+    );
+  }
+}
 
 const HomepageHeading = ({ mobile }) => (
   <Container text>
@@ -85,6 +100,8 @@ class DesktopContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyComputer}>
+        <Favicon url={Favicon} />
+        <Layout title="Solitrade Group"/>
         <Visibility
           once={false}
           onBottomPassed={this.showFixedMenu}
@@ -161,6 +178,8 @@ class MobileContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyMobile}>
+        <Favicon url={Favicon} />
+        <Layout title="Solitrade Group"/>
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
             {/* <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item> */}

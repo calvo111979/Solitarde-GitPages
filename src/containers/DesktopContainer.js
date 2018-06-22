@@ -21,6 +21,21 @@ import { Link } from 'react-static'
 import SimpleLogo from './images/simple_logo.png'
 import Name from './images/name.png'
 import SideLogo from './images/sidenamelogo.png'
+import FavIcon from './images/simple_logo.png'
+import Favicon from 'react-favicon';
+
+class Layout extends React.Component {
+  constructor(props){
+    super(props);
+    document.title = this.props.title;
+  }
+  render(){
+    return(
+      <div>
+      </div>
+    );
+  }
+}
 
 class DesktopContainer extends Component {
   state = {}
@@ -34,6 +49,8 @@ class DesktopContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyComputer}>
+        <Favicon url={Favicon} />
+        <Layout title="Solitrade Group"/>
         <Visibility
           once={false}
           onBottomPassed={this.showFixedMenu}
@@ -117,6 +134,8 @@ class MobileContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyMobile}>
+        <Favicon url={Favicon} />
+        <Layout title="Solitrade Group"/>
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
             {/* <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item> */}
