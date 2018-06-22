@@ -37,6 +37,7 @@ class Layout extends React.Component {
   }
 }
 
+
 class TabletContainer extends Component {
   state = {}
 
@@ -58,8 +59,9 @@ class TabletContainer extends Component {
         >
           <Segment
             textAlign='center'
-            style={{ minHeight: 600, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
+            style={{ padding: '0em 0em'}}
             vertical
+            inverted
           >
             <Menu
               fixed={fixed ? 'top' : null}
@@ -68,7 +70,7 @@ class TabletContainer extends Component {
               // secondary={!fixed}
               size='large'
             >
-              <Container style={{  }}>
+              <Container>
                 <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
                 {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
@@ -89,17 +91,23 @@ class TabletContainer extends Component {
                 <Menu.Item>
                   <Icon name='mail'/> info@solitrade.com
                 </Menu.Item> */}
+                {/* <Menu.Item style={{ right: '0px'}}>
+                  <Image src={SideLogo} size='small' />
+                </Menu.Item> */}
                 <Menu.Item position='right'>
-                  <Button as='a' href="http://sales.solitrade.com">
+                  <Image src={SideLogo} size='small' />
+                </Menu.Item>
+                <Menu.Item>
+                  {/* <Image src={SideLogo} size='small' /> */}
+                  <Button as='a'  href="http://sales.solitrade.com" >
                     Log in
                   </Button>
                 </Menu.Item>
+
               </Container>
             </Menu>
-            <HomepageHeading />
           </Segment>
         </Visibility>
-
         {children}
       </Responsive>
     )
@@ -270,6 +278,7 @@ const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
+    <TabletContainer>{children}</TabletContainer>
   </div>
 )
 
