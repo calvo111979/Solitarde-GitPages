@@ -18,6 +18,13 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
+import Other from './images/otherproducts.png'
+import Glass from './images/glass.png'
+import Insulation from './images/insulation.png'
+import Knauf from './images/knauf.png'
+import Silvercote from './images/logo-silvercote.png'
+import Insudry from './images/insudry.png'
+import Garland from './images/garland.png'
 
 const ResponsiveContainer = ({ children }) => (
   <div>
@@ -46,7 +53,7 @@ const PageLayout = () => (
      >
       <Grid.Row>
         <Grid.Column width={5}>
-          <Image src="http://solitrade.com/images/products/insulation.png" centered size='large'/>
+          <Image src={Insulation} centered size='large'/>
           <Segment basic >
               <Header as='h3'>THERMAL AND ACCOUSTICAL INSULTATION</Header>
               <Divider />
@@ -55,17 +62,17 @@ const PageLayout = () => (
                 <Grid>
                   <Grid.Row columns={2}>
                     <Grid.Column>
-                      <Image centered src="http://solitrade.com/images/products/knauf.png" size='tiny' />
+                      <Image centered src={Knauf} size='tiny' />
                     </Grid.Column>
                     <Grid.Column>
-                      <Image centered src="http://solitrade.com/images/products/logo-silvercote.png" size='tiny' />
+                      <Image centered src={Silvercote} size='tiny' />
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
           </Segment>
         </Grid.Column>
           <Grid.Column width={5}>
-            <Image src="http://solitrade.com/images/products/otherproducts.png" centered size='large'/>
+            <Image src={Other} centered size='large'/>
             <Segment basic >
             <Header as='h3'>WATERPROOFING COATINGS AND SYSTEMS</Header>
             <Divider />
@@ -75,16 +82,16 @@ const PageLayout = () => (
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image centered src="http://solitrade.com/images/products/insudry.png" size='tiny' />
+                  <Image centered src={Insudry} size='tiny' />
                 </Grid.Column>
                 <Grid.Column>
-                  <Image centered src="http://solitrade.com/images/products/garland.png" size='tiny' style={{ padding: '0em -30em' }}/>
+                  <Image centered src={Garland} size='tiny' style={{ padding: '0em -30em' }}/>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
           </Grid.Column>
           <Grid.Column width={5}>
-            <Image src="http://solitrade.com/images/products/glass.png" centered size='large'/>
+            <Image src={Glass} centered size='large'/>
             <Segment basic >
             <Header as='h3'>GLASS AND OTHER BUILDING MATERIALS</Header>
             <Divider />

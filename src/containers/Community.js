@@ -18,7 +18,7 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-
+import MapImg from './images/new-business-map.png'
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
@@ -39,7 +39,7 @@ const PageLayout = () => (
       </Container>
     </Segment>
 
-    <Image centered src="http://solitrade.com/images/resources/new-business-map.png" />
+    <Image centered src={MapImg} />
 
     <Footer />
   </ResponsiveContainer>

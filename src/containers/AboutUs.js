@@ -18,6 +18,7 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
+import Aerial from './images/solitrade-aerial.jpg'
 
 const ResponsiveContainer = ({ children }) => (
   <div>
@@ -46,7 +47,7 @@ const PageLayout = () => (
      >
       <Grid.Row>
         <Grid.Column width={8}>
-          <Image src="http://solitrade.com/images/resources/solitrade-aerial.jpg" centered />
+          <Image src={Aerial} centered />
         </Grid.Column>
           <Grid.Column width={8}>
             <Segment  basic>
