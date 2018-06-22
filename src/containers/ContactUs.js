@@ -38,7 +38,7 @@ class MobileForm extends Component {
     const { children } = this.props
 
     return (
-      <Responsive {...Responsive.onlyMobile}>
+      <Responsive {...Responsive.onlyMobileTablet}>
         <MenuAndBody>
           <Segment style={{ padding: '3em 0em' }} vertical>
             <Container text textAlign='center'>

@@ -68,7 +68,7 @@ class TabletContainer extends Component {
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
-              size='large'
+              size='medium'
             >
               <Container>
                 <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
@@ -95,7 +95,7 @@ class TabletContainer extends Component {
                   <Image src={SideLogo} size='small' />
                 </Menu.Item> */}
                 <Menu.Item position='right'>
-                  <Image src={SideLogo} size='small' />
+                  <Image src={SimpleLogo} size='mini' />
                 </Menu.Item>
                 <Menu.Item>
                   {/* <Image src={SideLogo} size='small' /> */}
