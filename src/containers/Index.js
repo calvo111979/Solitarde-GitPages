@@ -19,9 +19,14 @@ import {
 } from 'semantic-ui-react'
 import { Link } from 'react-static'
 import Footer from './Footer'
-import logo from './logo.png'
-import SimpleLogo from './simple_logo.png'
-import back from './backb.jpg'
+import logo from './images/logo.png'
+import SimpleLogo from './images/simple_logo.png'
+import back from './images/backb.jpg'
+import CostumerService from './images/CustomerService.jpg'
+import GlogalLogistics from './images/GlobalLogistics.jpg'
+import InternationalSales from './images/InternationalSales.jpg'
+import Valuation from './images/Valuation.jpg'
+
 const HomepageHeading = ({ mobile }) => (
   <Container text>
     <br/>
@@ -227,14 +232,14 @@ const HomepageLayout = () => (
       <Grid container stackable divided='vertically' >
         <Grid.Row>
           <Grid.Column width={8}>
-              <Image src='http://solitrade.com/images/bullets/InternationalSales.jpg' size='medium' floated='left' />
+              <Image src={CostumerService} size='medium' floated='left' />
               <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
               <Divider section />
               <Header as='h4'>Efficient, secure and reliable delveries.</Header>
           </Grid.Column>
 
             <Grid.Column width={8}>
-              <Image src='http://solitrade.com/images/bullets/GlobalLogistics.jpg' size='medium' floated='left'/>
+              <Image src={GlogalLogistics} size='medium' floated='left'/>
               <Header as='h3'>INTERNATIONAL SALES AND MARKETING</Header>
               <Divider section />
               <Header as='h4'>Global network of customers and suppliers.</Header>
@@ -243,13 +248,13 @@ const HomepageLayout = () => (
           <Grid.Row>
 
           <Grid.Column width={8}>
-              <Image src='http://solitrade.com/images/bullets/CustomerService.jpg' size='medium' floated='left'/>
+              <Image src={InternationalSales} size='medium' floated='left'/>
               <Header as='h3'>OUTSTANDING CUSTOMER SERVICE</Header>
               <Divider section />
               <Header as='h4'>We focus on our clients complete trust and satisfaction.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-              <Image src='http://solitrade.com/images/bullets/Valuation.jpg' size='medium' floated='left'/>
+              <Image src={Valuation} size='medium' floated='left'/>
               <Header as='h3'>FOREIGN MARKET VALUATION</Header>
               <Divider section />
               <Header as='h4'>Positioning products in the right market for success.</Header>

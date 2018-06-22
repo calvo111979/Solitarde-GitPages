@@ -59,23 +59,22 @@ function format_images_gallery(images_json){
 
 export default withRouteData(({ event }) => (
     <ResponsiveContainer>
-    ,
-    <Segment style={{ padding: '3em 0em' }} basic vertical>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em' }}>
-          {event.name}
-        </Header>
-        {/* <Header as='h4' color='blue' style={{ fontSize: '2em' }}>
-          {event.description}
-        </Header> */}
-        <Divider color="blue" />
+      <Segment style={{ padding: '3em 0em' }} basic vertical>
+        <Container text textAlign='center'>
+          <Header as='h1' style={{ fontSize: '2em' }}>
+            {event.name}
+          </Header>
+          {/* <Header as='h4' color='blue' style={{ fontSize: '2em' }}>
+            {event.description}
+          </Header> */}
+          <Divider color="blue" />
+        </Container>
+      </Segment>
+      <Container style={{ padding: '2em 6em' }}>
+        {/* <Gallery images={format_images_gallery(event.images)}/> */}
+        <ImageGallery items={format_images_slider(event.images)} />
       </Container>
-    </Segment>
-    <Container style={{ padding: '2em 6em' }}>
-      {/* <Gallery images={format_images_gallery(event.images)}/> */}
-      <ImageGallery items={format_images_slider(event.images)} />
-    </Container>
-    <Footer />
-  </ResponsiveContainer>
+      <Footer />
+    </ResponsiveContainer>
 
 ))

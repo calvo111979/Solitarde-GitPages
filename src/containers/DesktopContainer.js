@@ -18,8 +18,9 @@ import {
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Link } from 'react-static'
-import SimpleLogo from './simple_logo.png'
-import Name from './name.png'
+import SimpleLogo from './images/simple_logo.png'
+import Name from './images/name.png'
+import SideLogo from './images/sidenamelogo.png'
 
 class DesktopContainer extends Component {
   state = {}
@@ -72,11 +73,19 @@ class DesktopContainer extends Component {
                 <Menu.Item>
                   <Icon name='mail'/> info@solitrade.com
                 </Menu.Item> */}
+                {/* <Menu.Item style={{ right: '0px'}}>
+                  <Image src={SideLogo} size='small' />
+                </Menu.Item> */}
                 <Menu.Item position='right'>
+                  <Image src={SideLogo} size='small' />
+                </Menu.Item>
+                <Menu.Item>
+                  {/* <Image src={SideLogo} size='small' /> */}
                   <Button as='a'  href="http://sales.solitrade.com" >
                     Log in
                   </Button>
                 </Menu.Item>
+
               </Container>
             </Menu>
           </Segment>
