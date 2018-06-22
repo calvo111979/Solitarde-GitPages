@@ -24,7 +24,7 @@ import Gallery from 'react-grid-gallery';
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css";
 
-var path = "http://sales.solitrade.com"
+var path = "https://sales.solitrade.com"
 //
 function format_images_slider(images_json){
   const images =
