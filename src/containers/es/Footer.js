@@ -93,7 +93,7 @@ class Footer extends Component {
               <Grid divided inverted stackable>
                 <Grid.Row>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='ABOUT SOLITRADE' />
+                    <Header inverted as='h4' content='SOBRE SOLITRADE' />
                     <List inverted>
                       <List.Item>Apoyamos a clientes en todo el mundo
                          ofreciendo una sólida cartera de productos de
@@ -101,7 +101,7 @@ class Footer extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='SITE MAP' />
+                    <Header inverted as='h4' content='MAPA DE SITIO' />
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/productos">Productos</List.Item>
@@ -110,7 +110,7 @@ class Footer extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='PRODUCTS' />
+                    <Header inverted as='h4' content='PRODUCTOS' />
                     <List link inverted>
                       <List.Item as='a' href="/es/productos">Aislamiento Térmico y Acústico</List.Item>
                       <List.Item as='a' href="/es/productos">Recubrimientos a Prueba de Agua</List.Item>
@@ -118,7 +118,7 @@ class Footer extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='CONTACT' />
+                    <Header inverted as='h4' content='CONTACTO' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
@@ -167,7 +167,7 @@ class MobileFooter extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='SITE MAP' />
+                    <Header inverted as='h4' content='MAPA DE SITIO' />
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/productos">Productos</List.Item>
@@ -179,7 +179,7 @@ class MobileFooter extends Component {
                   <Grid.Row>
 
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='PRODUCTS' />
+                    <Header inverted as='h4' content='PRODUCTOS' />
                     <List link inverted>
                       <List.Item as='a' href="/es/productos">Aislamiento Térmico y Acústico</List.Item>
                       <List.Item as='a' href="/es/productos">Recubrimientos a Prueba de Agua</List.Item>
@@ -187,7 +187,7 @@ class MobileFooter extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='CONTACT' />
+                    <Header inverted as='h4' content='CONTACTO' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
