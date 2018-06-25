@@ -34,8 +34,8 @@ function format_events(events){
   const formatted_events =
     events.map(event => (
       {
-        header: event.name,
-        description: event.description,
+        header: event.es_name,
+        description: event.es_description,
         // href: event.id + '/',
         // href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
         image: path + event.images[0].src,

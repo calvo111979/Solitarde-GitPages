@@ -62,7 +62,7 @@ export default withRouteData(({ event }) => (
       <Segment style={{ padding: '3em 0em' }} basic vertical>
         <Container text textAlign='center'>
           <Header as='h1' style={{ fontSize: '2em' }}>
-            {event.name}
+            {event.es_name}
           </Header>
           {/* <Header as='h4' color='blue' style={{ fontSize: '2em' }}>
             {event.description}
