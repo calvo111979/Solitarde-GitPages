@@ -168,7 +168,7 @@ class DesktopForm extends Component {
           <Segment style={{ padding: '3em 0em' }} vertical>
             <Container text textAlign='center'>
               <Header as='h1' style={{ fontSize: '2em' }}>
-                CONTACT US
+                CONTACTÁNOS
               </Header>
             </Container>
           </Segment>

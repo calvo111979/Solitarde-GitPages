@@ -39,7 +39,7 @@ function format_events(events){
         // href: event.id + '/',
         // href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
         image: path + event.images[0].src,
-        href: 'eventos/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/'
+        href: event.name.replace(/\s+/g, '-').toLowerCase() + '/'
       }
   ))
 
@@ -54,13 +54,16 @@ const ResponsiveContainer = ({ children }) => (
 
 export default withRouteData(({ events }) => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em' }}>
-          Eventos
-        </Header>
-      </Container>
-    </Segment>
+    <Container text textAlign='center'>
+      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+        NUESTROS <span style={{color:"#2185d0"}}>EVENTOS</span>
+        {/* <Divider style={{color:"#2185d0"}}/> */}
+        <hr style={{
+          width: "10%",
+          border: "1px solid #2185d0",
+        }}/>
+      </Header>
+    </Container>
     <Segment basic>
       <Card.Group
         items={format_events(events.events)}

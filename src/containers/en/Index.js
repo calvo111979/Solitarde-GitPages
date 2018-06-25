@@ -28,6 +28,7 @@ import InternationalSales from './../images/InternationalSales.jpg'
 import Valuation from './../images/Valuation.jpg'
 import FavIcon from './../images/simple_logo.png'
 import Favicon from 'react-favicon';
+import SideLogo from './../images/sidenamelogo.png'
 
 class Layout extends React.Component {
   constructor(props){
@@ -44,6 +45,8 @@ class Layout extends React.Component {
 
 const HomepageHeading = ({ mobile }) => (
   <Container text>
+    <br/>
+    <br/>
     <br/>
     <br/>
     <Image centered src={logo} size='large'/>
@@ -70,11 +73,22 @@ const HomepageHeading = ({ mobile }) => (
       }}
     /> */}
     <br/>
+    <br/>
+    <br/>
     <Button primary size='big' href="about">
       MORE INFO
     </Button>
     &nbsp;
-    <Button primary size='big' href="contact" >
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <Button color='white' inverted size='big' href="contact" >
       CONTACT US
     </Button>
   </Container>
@@ -109,45 +123,72 @@ class DesktopContainer extends Component {
         >
           <Segment
             textAlign='center'
-            style={{ minHeight: 600, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
+            style={{ minHeight: 900, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
             vertical
           >
             <Menu
-              fixed={fixed ? 'top' : null}
+              // fixed={fixed ? 'top' : null}
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='large'
-            >
+              style = {{margin: 0, padding: '0em 1em'}}
+            ><Grid>
+              <Grid.Row>
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
               <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
-              <Container style={{  }}>
-                {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
-                {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
-                <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                <Menu.Item as='a' href='/'>HOME</Menu.Item>
-                <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
-                <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
-                <Dropdown text='OUR COMMUNITY' pointing className='link item'>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href='/community'>US</Dropdown.Item>
-                    <Dropdown.Item href='/events'>EVENTS</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
-                {/* <Menu.Item>
-                  <Icon name='phone'/> +1-864-498-8691
-                </Menu.Item>
-                <Menu.Item>
-                  <Icon name='mail'/> info@solitrade.com
-                </Menu.Item> */}
-                <Menu.Item position='right'>
-                  <Button as='a' href="http://sales.solitrade.com">
-                    Log in
-                  </Button>
-                </Menu.Item>
-              </Container>
+              <Menu.Item position='right'>
+                <Icon name='phone'/> +1-864-498-8691
+              </Menu.Item>
+              <Menu.Item>
+                <Icon name='mail'/> info@solitrade.com
+              </Menu.Item>
+              <Menu.Item>
+                {/* <Image src={SideLogo} size='small' /> */}
+                <Button as='a'  href="http://sales.solitrade.com" >
+                  Log in
+                </Button>
+              </Menu.Item>
+              {/* <Menu.Item style={{ right: '0px'}}>
+                <Image src={SideLogo} size='small' />
+              </Menu.Item> */}
+            </Grid.Row>
+            <Grid.Row centered>
+              <Menu
+                fixed={fixed ? 'top' : null}
+                inverted={!fixed}
+                // pointing={!fixed}
+                // secondary={!fixed}
+                size='large'
+              >
+                <Container style={{  }}>
+                  {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
+                  {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
+                  <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
+                  <Menu.Item as='a' href='/'>HOME</Menu.Item>
+                  <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
+                  <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
+                  <Dropdown text='OUR COMMUNITY' pointing className='link item'>
+                    <Dropdown.Menu>
+                      <Dropdown.Item href='/community'>US</Dropdown.Item>
+                      <Dropdown.Item href='/events'>EVENTS</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
+                  {/* <Menu.Item>
+                    <Icon name='phone'/> +1-864-498-8691
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Icon name='mail'/> info@solitrade.com
+                  </Menu.Item> */}
+                  <Menu.Item position='right' style={{ right: '0px'}}>
+                    <Image src={SideLogo} size='small' />
+                  </Menu.Item>
+                </Container>
+              </Menu>
+            </Grid.Row>
+              </Grid>
             </Menu>
             <HomepageHeading />
           </Segment>
@@ -184,45 +225,72 @@ class TabletContainer extends Component {
         >
           <Segment
             textAlign='center'
-            style={{ minHeight: 600, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
+            style={{ minHeight: 900, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
             vertical
           >
             <Menu
-              fixed={fixed ? 'top' : null}
+              // fixed={fixed ? 'top' : null}
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='large'
-            >
+              style = {{margin: 0}}
+            ><Grid>
+              <Grid.Row>
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
               <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
-              <Container style={{  }}>
-                {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
-                {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
-                <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                <Menu.Item as='a' href='/'>HOME</Menu.Item>
-                <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
-                <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
-                <Dropdown text='OUR COMMUNITY' pointing className='link item'>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href='/community'>US</Dropdown.Item>
-                    <Dropdown.Item href='/events'>EVENTS</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
-                {/* <Menu.Item>
-                  <Icon name='phone'/> +1-864-498-8691
-                </Menu.Item>
-                <Menu.Item>
-                  <Icon name='mail'/> info@solitrade.com
-                </Menu.Item> */}
-                <Menu.Item position='right'>
-                  <Button as='a' href="http://sales.solitrade.com">
-                    Log in
-                  </Button>
-                </Menu.Item>
-              </Container>
+              <Menu.Item position='right'>
+                <Icon name='phone'/> +1-864-498-8691
+              </Menu.Item>
+              <Menu.Item>
+                <Icon name='mail'/> info@solitrade.com
+              </Menu.Item>
+              <Menu.Item>
+                {/* <Image src={SideLogo} size='small' /> */}
+                <Button as='a'  href="http://sales.solitrade.com" >
+                  Log in
+                </Button>
+              </Menu.Item>
+              {/* <Menu.Item style={{ right: '0px'}}>
+                <Image src={SideLogo} size='small' />
+              </Menu.Item> */}
+            </Grid.Row>
+            <Grid.Row centered>
+              <Menu
+                fixed={fixed ? 'top' : null}
+                inverted={!fixed}
+                // pointing={!fixed}
+                // secondary={!fixed}
+                size='large'
+              >
+                <Container style={{  }}>
+                  {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
+                  {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
+                  <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
+                  <Menu.Item as='a' href='/'>HOME</Menu.Item>
+                  <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
+                  <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
+                  <Dropdown text='OUR COMMUNITY' pointing className='link item'>
+                    <Dropdown.Menu>
+                      <Dropdown.Item href='/community'>US</Dropdown.Item>
+                      <Dropdown.Item href='/events'>EVENTS</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
+                  {/* <Menu.Item>
+                    <Icon name='phone'/> +1-864-498-8691
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Icon name='mail'/> info@solitrade.com
+                  </Menu.Item> */}
+                  <Menu.Item position='right' style={{ right: '0px'}}>
+                    <Image src={SideLogo} size='small' />
+                  </Menu.Item>
+                </Container>
+              </Menu>
+            </Grid.Row>
+              </Grid>
             </Menu>
             <HomepageHeading />
           </Segment>
@@ -280,7 +348,7 @@ class MobileContainer extends Component {
             <Segment
               inverted
               textAlign='center'
-              style={{ minHeight: 500, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
+              style={{ minHeight: 900, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
               // style={{ minHeight: 350, padding: '1em 0em' }}
               vertical
               basic
@@ -327,20 +395,38 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} basic>
+      <Container text textAlign='center'>
+        <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+          WHAT WE <span style={{color:"#2185d0"}}>OFFER</span>
+          {/* <Divider style={{color:"#2185d0"}}/> */}
+          <hr style={{
+            width: "10%",
+            border: "1px solid #2185d0",
+          }}/>
+        </Header>
+      </Container>
+    <Segment style={{ padding: '0em 0em' }} basic>
       <Grid container stackable divided='vertically' >
         <Grid.Row>
           <Grid.Column width={8}>
               <Image src={CostumerService} size='medium' floated='left' />
               <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
-              <Divider section />
+              <Container>
+                <hr style={{
+                  width: "40%",
+                  border: "1px solid #2185d0",
+                }}/>
+              </Container>
               <Header as='h4'>Efficient, secure and reliable delveries.</Header>
           </Grid.Column>
 
             <Grid.Column width={8}>
               <Image src={GlogalLogistics} size='medium' floated='left'/>
               <Header as='h3'>INTERNATIONAL SALES AND MARKETING</Header>
-              <Divider section />
+              <hr style={{
+                width: "40%",
+                border: "1px solid #2185d0",
+              }}/>
               <Header as='h4'>Global network of customers and suppliers.</Header>
           </Grid.Column>
           </Grid.Row>
@@ -349,13 +435,20 @@ const HomepageLayout = () => (
           <Grid.Column width={8}>
               <Image src={InternationalSales} size='medium' floated='left'/>
               <Header as='h3'>OUTSTANDING CUSTOMER SERVICE</Header>
-              <Divider section />
+              <hr style={{
+                width: "40%",
+                border: "1px solid #2185d0",
+                padding: "0em 0em"
+              }}/>
               <Header as='h4'>We focus on our clients complete trust and satisfaction.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
               <Image src={Valuation} size='medium' floated='left'/>
               <Header as='h3'>FOREIGN MARKET VALUATION</Header>
-              <Divider section />
+              <hr style={{
+                width: "40%",
+                border: "1px solid #2185d0",
+              }}/>
               <Header as='h4'>Positioning products in the right market for success.</Header>
           </Grid.Column>
         </Grid.Row>

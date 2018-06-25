@@ -38,7 +38,7 @@ function format_events(events){
         description: event.description,
         // href: event.id + '/',
         // href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
-        href: 'events/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
+        href: event.name.replace(/\s+/g, '-').toLowerCase() + '/',
         image: path + event.images[0].src
       }
   ))

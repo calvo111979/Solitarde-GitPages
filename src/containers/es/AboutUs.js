@@ -32,13 +32,16 @@ ResponsiveContainer.propTypes = {
 
 const PageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em' }}>
-          ACERCA DE NOSOTROS
-        </Header>
-      </Container>
-    </Segment>
+    <Container text textAlign='center'>
+      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+        ACERCA DE <span style={{color:"#2185d0"}}>NOSOTROS</span>
+        {/* <Divider style={{color:"#2185d0"}}/> */}
+        <hr style={{
+          width: "10%",
+          border: "1px solid #2185d0",
+        }}/>
+      </Header>
+    </Container>
     <Grid
       container
       stackable
@@ -52,7 +55,12 @@ const PageLayout = () => (
           <Grid.Column width={8}>
             <Segment  basic>
               <Header as='h3'>VENTAS Y MERCADOTENCIA</Header>
-              <Divider section />
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+                marginLeft: 0,
+                padding: '0% 1em'
+              }}/>
               <Header as='h4'>
                 Solitrade Group apoya a clientes de todo el mundo ofreciendo
                 una sólida cartera de productos de construcción de la más alta
@@ -62,7 +70,12 @@ const PageLayout = () => (
                   esencia, estamos construidos para ayudarle a construir.
                </Header>
                <Header as='h3'>REPRESENTACIÓN GLOBAL DE MARCAS Y PRODUCTOS</Header>
-               <Divider section />
+               <hr style={{
+                 width: "10%",
+                 border: "1px solid #2185d0",
+                 marginLeft: 0,
+                 padding: '0% 1em'
+               }}/>
                <Header as='h4'>
                  Como un grupo de comercio global, cuidadosamente seleccionamos
                   a fabricantes de todo el mundo para poder ofrecer los mejores

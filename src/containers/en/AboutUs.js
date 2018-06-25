@@ -32,18 +32,21 @@ ResponsiveContainer.propTypes = {
 
 const PageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em' }}>
-          ABOUT US
-        </Header>
-      </Container>
-    </Segment>
+    <Container text textAlign='center'>
+      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+        ABOUT <span style={{color:"#2185d0"}}>US</span>
+        {/* <Divider style={{color:"#2185d0"}}/> */}
+        <hr style={{
+          width: "10%",
+          border: "1px solid #2185d0",
+        }}/>
+      </Header>
+    </Container>
     <Grid
       container
       stackable
       divided='vertically'
-      style={{ padding: '3% 0%' }}
+      style={{ padding: '0% 0%' }}
      >
       <Grid.Row>
         <Grid.Column width={8}>
@@ -52,7 +55,12 @@ const PageLayout = () => (
           <Grid.Column width={8}>
             <Segment  basic>
               <Header as='h3'>SALES AND MARKETING</Header>
-              <Divider section />
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+                marginLeft: 0,
+                padding: '0% 1em'
+              }}/>
               <Header as='h4'>
                 Solitrade Group supports customers around the world
                  by offering a robust portfolio of the highest quality building
@@ -61,7 +69,12 @@ const PageLayout = () => (
                  they do best—build their business.
                </Header>
                <Header as='h3'>GLOBAL BRAND AND PRODUCT REPRESENTATION</Header>
-               <Divider section />
+               <hr style={{
+                 width: "10%",
+                 border: "1px solid #2185d0",
+                 marginLeft: 0,
+                 padding: '0% 1em'
+               }}/>
                <Header as='h4'>
                  As a global trading group, we carefully screen manufacturers
                   from around the world and compile only the best collection

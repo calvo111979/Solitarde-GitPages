@@ -64,20 +64,46 @@ class TabletContainer extends Component {
             inverted
           >
             <Menu
+              // fixed={fixed ? 'top' : null}
+              // inverted={!fixed}
+              // pointing={!fixed}
+              inverted
+              secondary={!fixed}
+              size='medium'
+            >
+              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
+              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+
+              <Menu.Item position='right'>
+                <Icon name='phone'/> +1-864-498-8691
+              </Menu.Item>
+              <Menu.Item>
+                <Icon name='mail'/> info@solitrade.com
+              </Menu.Item>
+              <Menu.Item>
+                {/* <Image src={SideLogo} size='small' /> */}
+                <Button as='a'  href="http://sales.solitrade.com" >
+                  Log in
+                </Button>
+              </Menu.Item>
+              {/* <Menu.Item style={{ right: '0px'}}>
+                <Image src={SideLogo} size='small' />
+              </Menu.Item> */}
+            </Menu>
+            <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='medium'
             >
-              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+
               <Container>
                 {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                 <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                <Menu.Item as='a' href='/'>HOME</Menu.Item>
+                <Menu.Item as='a' href='/' position='right'>HOME</Menu.Item>
                 <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
                 <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
                 <Dropdown text='OUR COMMUNITY' pointing className='link item'>
@@ -87,24 +113,11 @@ class TabletContainer extends Component {
                   </Dropdown.Menu>
                 </Dropdown>
                 <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
-                {/* <Menu.Item>
-                  <Icon name='phone'/> +1-864-498-8691
-                </Menu.Item>
-                <Menu.Item>
-                  <Icon name='mail'/> info@solitrade.com
-                </Menu.Item> */}
-                {/* <Menu.Item style={{ right: '0px'}}>
-                  <Image src={SideLogo} size='small' />
-                </Menu.Item> */}
+
                 <Menu.Item position='right'>
                   <Image src={SimpleLogo} size='mini' />
                 </Menu.Item>
-                <Menu.Item>
-                  {/* <Image src={SideLogo} size='small' /> */}
-                  <Button as='a'  href="http://sales.solitrade.com" >
-                    Log in
-                  </Button>
-                </Menu.Item>
+
 
               </Container>
             </Menu>
@@ -147,15 +160,40 @@ class DesktopContainer extends Component {
             inverted
           >
             <Menu
+              // fixed={fixed ? 'top' : null}
+              // inverted={!fixed}
+              // pointing={!fixed}
+              inverted
+              secondary={!fixed}
+              size='large'
+            >
+              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
+              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+
+              <Menu.Item position='right'>
+                <Icon name='phone'/> +1-864-498-8691
+              </Menu.Item>
+              <Menu.Item>
+                <Icon name='mail'/> info@solitrade.com
+              </Menu.Item>
+              <Menu.Item>
+                {/* <Image src={SideLogo} size='small' /> */}
+                <Button as='a'  href="http://sales.solitrade.com" >
+                  Log in
+                </Button>
+              </Menu.Item>
+              {/* <Menu.Item style={{ right: '0px'}}>
+                <Image src={SideLogo} size='small' />
+              </Menu.Item> */}
+            </Menu>
+            <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='large'
             >
-              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
               <Container>
                 {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
@@ -176,19 +214,9 @@ class DesktopContainer extends Component {
                 <Menu.Item>
                   <Icon name='mail'/> info@solitrade.com
                 </Menu.Item> */}
-                {/* <Menu.Item style={{ right: '0px'}}>
-                  <Image src={SideLogo} size='small' />
-                </Menu.Item> */}
-                <Menu.Item position='right'>
+                <Menu.Item position='right' style={{ right: '0px'}}>
                   <Image src={SideLogo} size='small' />
                 </Menu.Item>
-                <Menu.Item>
-                  {/* <Image src={SideLogo} size='small' /> */}
-                  <Button as='a'  href="http://sales.solitrade.com" >
-                    Log in
-                  </Button>
-                </Menu.Item>
-
               </Container>
             </Menu>
           </Segment>

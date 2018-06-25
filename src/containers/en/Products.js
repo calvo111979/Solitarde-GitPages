@@ -38,13 +38,16 @@ ResponsiveContainer.propTypes = {
 
 const PageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '3% 0%' }} vertical>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em' }}>
-          PRODUCTS
-        </Header>
-      </Container>
-    </Segment>
+    <Container text textAlign='center'>
+      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+        OUR <span style={{color:"#2185d0"}}>PRODUCTS</span>
+        {/* <Divider style={{color:"#2185d0"}}/> */}
+        <hr style={{
+          width: "10%",
+          border: "1px solid #2185d0",
+        }}/>
+      </Header>
+    </Container>
     <Grid
       container
       stackable
@@ -56,7 +59,12 @@ const PageLayout = () => (
           <Image src={Insulation} centered size='large'/>
           <Segment basic >
               <Header as='h3'>THERMAL AND ACCOUSTICAL INSULTATION</Header>
-              <Divider />
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+                marginLeft: 0,
+                padding: '0% 1em'
+              }}/>
               <Header as='h5'>Exclusive sales representative of Knauf Insulation
                 North America products for Latin America.</Header>
                 <Grid>
@@ -75,7 +83,12 @@ const PageLayout = () => (
             <Image src={Other} centered size='large'/>
             <Segment basic >
             <Header as='h3'>WATERPROOFING COATINGS AND SYSTEMS</Header>
-            <Divider />
+            <hr style={{
+              width: "10%",
+              border: "1px solid #2185d0",
+              marginLeft: 0,
+              padding: '0% 1em'
+            }}/>
             <Header as='h5'>Distribution of waterproofing products,
               coatings and acoustical mats. </Header>
             </Segment>
@@ -94,7 +107,12 @@ const PageLayout = () => (
             <Image src={Glass} centered size='large'/>
             <Segment basic >
             <Header as='h3'>GLASS AND OTHER BUILDING MATERIALS</Header>
-            <Divider />
+            <hr style={{
+              width: "10%",
+              border: "1px solid #2185d0",
+              marginLeft: 0,
+              padding: '0% 1em'
+            }}/>
             <Header as='h5'>We distribute high quality glass at competitive
               prices.</Header>
             </Segment>
