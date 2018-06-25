@@ -16,9 +16,9 @@ import {
   Visibility,
   Flag
 } from 'semantic-ui-react'
-import DesktopContainer from './en/DesktopContainer'
-import Footer from './en/Footer'
-
+import DesktopContainer from './DesktopContainer'
+import Footer from './Footer'
+import MapImg from './../images/new-business-map.png'
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
@@ -34,17 +34,13 @@ const PageLayout = () => (
     <Segment style={{ padding: '3em 0em' }} vertical>
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em' }}>
-          Page Not Found
+          OUR COMMUNITY
         </Header>
       </Container>
     </Segment>
-    <Grid
-      container
-      stackable
-      divided='vertically'
-      style={{ padding: '3% 0%' }}
-     >
-    </Grid>
+
+    <Image centered src={MapImg} />
+
     <Footer />
   </ResponsiveContainer>
 

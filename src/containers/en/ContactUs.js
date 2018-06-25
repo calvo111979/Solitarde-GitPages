@@ -93,6 +93,68 @@ MobileForm.propTypes = {
   children: PropTypes.node,
 }
 
+class TabletForm extends Component {
+  state = {}
+
+  render() {
+    const { children } = this.props
+
+    return (
+      <Responsive {...Responsive.onlyTablet}>
+        <MenuAndBody>
+          <Segment style={{ padding: '3em 0em' }} vertical>
+            <Container text textAlign='center'>
+              <Header as='h1' style={{ fontSize: '2em' }}>
+                CONTACT US
+              </Header>
+            </Container>
+          </Segment>
+          <Segment style={{ padding: '3em 1em' }} vertical>
+            <Grid>
+              <Grid.Row>
+                <Grid.Column>
+                  <Form action="http://solitrade.com/sendmail.php">
+                    <Form.Group widths='equal'>
+                      <Form.Input fluid label='Name' placeholder='Name' />
+                      <Form.Input fluid label='Email' placeholder='Email' />
+                      <Form.Input fluid label='Phone' placeholder='Phone' />
+                    </Form.Group>
+                    <Form.Input fluid label='Subject' placeholder='Subject' />
+                    <Form.TextArea label='About' placeholder='Tell us more' />
+                    <Form.Button>Submit</Form.Button>
+                  </Form>
+                </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                  <Grid.Column  style={{ padding: '0em 1em' }}>
+                        <Header as='h4' content='CONTACT INFO' />
+                            <Grid.Column style={{ padding: '1em 0em' }}>
+                              <Icon name='phone' color='blue' size='big' />
+                               +1-864-498-8691
+                            </Grid.Column>
+                            <Grid.Column style={{ padding: '1em 0em' }}>
+                              <Icon name='mail' color='blue' size='big'/>
+                               info@solitrade.com
+                            </Grid.Column>
+                            <Grid.Column style={{ padding: '1em 0em' }}>
+                              <Icon name='point' color='blue' size='big'/>
+                               CHARLOTTE, SC 28203 (USA)
+                            </Grid.Column>
+                    </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+          <Footer />
+        </MenuAndBody>
+      </Responsive>
+    )
+  }
+}
+
+TabletForm.propTypes = {
+  children: PropTypes.node,
+}
+
 
 
 class DesktopForm extends Component {
@@ -154,8 +216,9 @@ class DesktopForm extends Component {
 
 const Forms = ({ children }) => (
   <div>
-    <MobileForm>{children}</MobileForm>
     <DesktopForm>{children}</DesktopForm>
+    <MobileForm>{children}</MobileForm>
+    <TabletForm>{children}</TabletForm>
   </div>
 )
 

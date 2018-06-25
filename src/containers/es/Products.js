@@ -18,13 +18,13 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-import Other from './images/otherproducts.png'
-import Glass from './images/glass.png'
-import Insulation from './images/insulation.png'
-import Knauf from './images/knauf.png'
-import Silvercote from './images/logo-silvercote.png'
-import Insudry from './images/insudry.png'
-import Garland from './images/garland.png'
+import Other from './../images/otherproducts.png'
+import Glass from './../images/glass.png'
+import Insulation from './../images/insulation.png'
+import Knauf from './../images/knauf.png'
+import Silvercote from './../images/logo-silvercote.png'
+import Insudry from './../images/insudry.png'
+import Garland from './../images/garland.png'
 
 const ResponsiveContainer = ({ children }) => (
   <div>
@@ -41,7 +41,7 @@ const PageLayout = () => (
     <Segment style={{ padding: '3% 0%' }} vertical>
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em' }}>
-          PRODUCTS
+          PRODUCTOS
         </Header>
       </Container>
     </Segment>
@@ -55,10 +55,10 @@ const PageLayout = () => (
         <Grid.Column width={5}>
           <Image src={Insulation} centered size='large'/>
           <Segment basic >
-              <Header as='h3'>THERMAL AND ACCOUSTICAL INSULTATION</Header>
+              <Header as='h3'>AISLAMIENTO TÉRMICO Y ACÚSTICO</Header>
               <Divider />
-              <Header as='h5'>Exclusive sales representative of Knauf Insulation
-                North America products for Latin America.</Header>
+              <Header as='h5'>Representante de ventas exclusivo en Latinoamérica
+                 de los productos de Asilamiento Knauf North America. </Header>
                 <Grid>
                   <Grid.Row columns={2}>
                     <Grid.Column>
@@ -74,10 +74,10 @@ const PageLayout = () => (
           <Grid.Column width={5}>
             <Image src={Other} centered size='large'/>
             <Segment basic >
-            <Header as='h3'>WATERPROOFING COATINGS AND SYSTEMS</Header>
+            <Header as='h3'>RECUBRIMIENTOS A PRUEBA DE AGUA</Header>
             <Divider />
-            <Header as='h3'>Distribution of waterproofing products,
-              coatings and acoustical mats. </Header>
+            <Header as='h5'>Distribución de productos de revestimiento,
+              tapetes acústicos, etc. </Header>
             </Segment>
             <Grid>
               <Grid.Row columns={2}>
@@ -93,10 +93,10 @@ const PageLayout = () => (
           <Grid.Column width={5}>
             <Image src={Glass} centered size='large'/>
             <Segment basic >
-            <Header as='h3'>GLASS AND OTHER BUILDING MATERIALS</Header>
+            <Header as='h3'>VIDRIO Y OTROS MATERIALES</Header>
             <Divider />
-            <Header as='h3'>We distribute high quality glass at competitive
-              prices.</Header>
+            <Header as='h5'>Distribuimos vidrio de alta calidad a precios
+              competitivos.</Header>
             </Segment>
           </Grid.Column>
         </Grid.Row>

@@ -12,7 +12,7 @@ import Favicon from 'react-favicon';
 const App = () => (
   <Router>
     <div>
-      <Favicon url={Favicon} />
+      {/* <Favicon url={Favicon} /> */}
       {/* <nav>
         <Link exact to="/">Solitrade</Link>
       </nav> */}

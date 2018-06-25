@@ -19,14 +19,14 @@ import {
 } from 'semantic-ui-react'
 import { Link } from 'react-static'
 import Footer from './Footer'
-import logo from './images/logo.png'
-import SimpleLogo from './images/simple_logo.png'
-import back from './images/backb.jpg'
-import CostumerService from './images/CustomerService.jpg'
-import GlogalLogistics from './images/GlobalLogistics.jpg'
-import InternationalSales from './images/InternationalSales.jpg'
-import Valuation from './images/Valuation.jpg'
-import FavIcon from './images/simple_logo.png'
+import logo from './../images/logo.png'
+import SimpleLogo from './../images/simple_logo.png'
+import back from './../images/backb.jpg'
+import CostumerService from './../images/CustomerService.jpg'
+import GlogalLogistics from './../images/GlobalLogistics.jpg'
+import InternationalSales from './../images/InternationalSales.jpg'
+import Valuation from './../images/Valuation.jpg'
+import FavIcon from './../images/simple_logo.png'
 import Favicon from 'react-favicon';
 
 class Layout extends React.Component {
@@ -71,11 +71,11 @@ const HomepageHeading = ({ mobile }) => (
     /> */}
     <br/>
     <Button primary size='big' href="about">
-      MORE INFO
+      MÁS INFORMACIÓN
     </Button>
     &nbsp;
     <Button primary size='big' href="contact" >
-      CONTACT US
+      CONTÁCTANOS
     </Button>
   </Container>
 )
@@ -100,7 +100,7 @@ class DesktopContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyComputer}>
-        <Favicon url={Favicon} />
+        {/* <Favicon url={Favicon} /> */}
         <Layout title="Solitrade Group"/>
         <Visibility
           once={false}
@@ -119,21 +119,23 @@ class DesktopContainer extends Component {
               // secondary={!fixed}
               size='large'
             >
-              <Container style={{  }}>
-                <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
+              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
+              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+              <Container>
                 {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                 <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                <Menu.Item as='a' href='/'>HOME</Menu.Item>
-                <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
-                <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
-                <Dropdown text='OUR COMMUNITY' pointing className='link item'>
+                <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
+                <Menu.Item as='a' href='/es/sobre'>ACERCA DE NOSOTROS</Menu.Item>
+                <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
+                <Dropdown text='COMUNIDAD' pointing className='link item'>
                   <Dropdown.Menu>
-                    <Dropdown.Item href='/community'>US</Dropdown.Item>
-                    <Dropdown.Item href='/events'>EVENTS</Dropdown.Item>
+                    <Dropdown.Item href='/es/comunidad'>NOSOTROS</Dropdown.Item>
+                    <Dropdown.Item href='/es/eventos'>EVENTOS</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
+                <Menu.Item as='a' href='/es/contacto' >CONTACTO</Menu.Item>
                 {/* <Menu.Item>
                   <Icon name='phone'/> +1-864-498-8691
                 </Menu.Item>
@@ -173,7 +175,7 @@ class TabletContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyTablet}>
-        <Favicon url={Favicon} />
+        {/* <Favicon url={Favicon} /> */}
         <Layout title="Solitrade Group"/>
         <Visibility
           once={false}
@@ -192,21 +194,23 @@ class TabletContainer extends Component {
               // secondary={!fixed}
               size='large'
             >
+              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
+              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
               <Container style={{  }}>
-                <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
                 {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                 <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                <Menu.Item as='a' href='/'>HOME</Menu.Item>
-                <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
-                <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
-                <Dropdown text='OUR COMMUNITY' pointing className='link item'>
+                <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
+                <Menu.Item as='a' href='/es/sobre'>ACERCA DE NOSOTROS</Menu.Item>
+                <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
+                <Dropdown text='COMUNIDAD' pointing className='link item'>
                   <Dropdown.Menu>
-                    <Dropdown.Item href='/community'>US</Dropdown.Item>
-                    <Dropdown.Item href='/events'>EVENTS</Dropdown.Item>
+                    <Dropdown.Item href='/es/comunidad'>NOSOTROS</Dropdown.Item>
+                    <Dropdown.Item href='/es/eventos'>EVENTOS</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
+                <Menu.Item as='a' href='/es/contacto' >CONTACTO</Menu.Item>
                 {/* <Menu.Item>
                   <Icon name='phone'/> +1-864-498-8691
                 </Menu.Item>
@@ -251,7 +255,7 @@ class MobileContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyMobile}>
-        <Favicon url={Favicon} />
+        {/* <Favicon url={Favicon} /> */}
         <Layout title="Solitrade Group"/>
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
@@ -259,12 +263,12 @@ class MobileContainer extends Component {
             {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
             {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
             <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-            <Menu.Item as='a' href='/'>HOME</Menu.Item>
-            <Menu.Item as='a' href='/about'>ABOUT US</Menu.Item>
-            <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
-            <Menu.Item as='a' href='/community'>US</Menu.Item>
-            <Menu.Item as='a' href='/events'>EVENTS</Menu.Item>
-            <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
+            <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
+            <Menu.Item as='a' href='/es/sobre'>ACERCA DE NOSOTROS</Menu.Item>
+            <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
+            <Menu.Item as='a' href='/es/comunidad'>NOSOTROS</Menu.Item>
+            <Menu.Item as='a' href='/es/eventos'>EVENTOS</Menu.Item>
+            <Menu.Item as='a' href='/es/contacto' >CONTACTO</Menu.Item>
 
           </Sidebar>
 
@@ -285,6 +289,8 @@ class MobileContainer extends Component {
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' size='large' />
                   </Menu.Item>
+                  <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
+                  <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
                   <Menu.Item position='right'>
                     {/* <Icon name='phone'/> +1-864-498-8691  /
                     <Icon name='mail'/> info@solitrade.com */}
@@ -326,31 +332,31 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
               <Image src={CostumerService} size='medium' floated='left' />
-              <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
+              <Header as='h3'>VENTAS Y MERCADOTECNIA INTERNACIONAL</Header>
               <Divider section />
-              <Header as='h4'>Efficient, secure and reliable delveries.</Header>
+              <Header as='h4'>Red global de clientes y proveedores.</Header>
           </Grid.Column>
 
             <Grid.Column width={8}>
               <Image src={GlogalLogistics} size='medium' floated='left'/>
-              <Header as='h3'>INTERNATIONAL SALES AND MARKETING</Header>
+              <Header as='h3'>EXPERIENCIA EN LOGÍSTICA GLOBAL</Header>
               <Divider section />
-              <Header as='h4'>Global network of customers and suppliers.</Header>
+              <Header as='h4'>Entregas eficientes fiables y seguras.</Header>
           </Grid.Column>
           </Grid.Row>
           <Grid.Row>
 
           <Grid.Column width={8}>
               <Image src={InternationalSales} size='medium' floated='left'/>
-              <Header as='h3'>OUTSTANDING CUSTOMER SERVICE</Header>
+              <Header as='h3'>EXCELENTE SERVICIO AL CLIENTE</Header>
               <Divider section />
-              <Header as='h4'>We focus on our clients complete trust and satisfaction.</Header>
+              <Header as='h4'>Nos centramos en la total confianza y satisfacción de nuestros clientes</Header>
           </Grid.Column>
           <Grid.Column width={8}>
               <Image src={Valuation} size='medium' floated='left'/>
-              <Header as='h3'>FOREIGN MARKET VALUATION</Header>
+              <Header as='h3'>VALUACIÓN DE MERCADOS EXTRANJEROS</Header>
               <Divider section />
-              <Header as='h4'>Positioning products in the right market for success.</Header>
+              <Header as='h4'>Posicionamiento de productos en el mercado correcto para el éxito.</Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -360,10 +366,10 @@ const HomepageLayout = () => (
     <Segment style={{ padding: '8em 0em', backgroundColor:'#666666'}} vertical>
       <Container text textAlign='center'>
         <Header as='h2' style={{ fontSize: '2em', color:'#FFFFFF' }}>
-          WE ARE BUILT
+          ESTAMOS CONSTRUIDOS
         </Header>
         <Header as='h2' style={{ fontSize: '2em', color:'#66BEFA' }}>
-          TO HELP YOU BUILD
+          PARA AYUDARTE A CONSTRUIR
         </Header>
       </Container>
     </Segment>

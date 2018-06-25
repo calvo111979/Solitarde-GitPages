@@ -37,8 +37,9 @@ function format_events(events){
         header: event.name,
         description: event.description,
         // href: event.id + '/',
-        href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
-        image: path + event.images[0].src
+        // href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
+        image: path + event.images[0].src,
+        href: 'eventos/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/'
       }
   ))
 
@@ -56,7 +57,7 @@ export default withRouteData(({ events }) => (
     <Segment style={{ padding: '3em 0em' }} vertical>
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em' }}>
-          Events
+          Eventos
         </Header>
       </Container>
     </Segment>

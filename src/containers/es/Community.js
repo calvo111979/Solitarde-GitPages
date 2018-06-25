@@ -18,7 +18,7 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-import MapImg from './images/new-business-map.png'
+import MapImg from './../images/new-business-map.png'
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
@@ -34,7 +34,7 @@ const PageLayout = () => (
     <Segment style={{ padding: '3em 0em' }} vertical>
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em' }}>
-          OUR COMMUNITY
+          NUESTRA COMUNIDAD
         </Header>
       </Container>
     </Segment>

@@ -40,47 +40,79 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/Index'
-      },
-      {
-        path: '/contact',
-        component: 'src/containers/ContactUs'
-      },
-      {
-        path: '/products',
-        component: 'src/containers/Products'
-      },
-      {
-        path: '/community',
-        component: 'src/containers/Community'
-      },
-      // {
-      //   path: '/menu',
-      //   component: 'src/containers/Index'
-      // },
-      // {
-      //   path: '/footer',
-      //   component: 'src/containers/Footer'
-      // },
-      {
-        path: '/about',
-        component: 'src/containers/AboutUs'
-      },
-      {
-        path: '/events',
-        component: 'src/containers/Events',
-        getData: () => ({
-          events,
+        component: 'src/containers/en/Index',
+        children: [
+          {
+            path: '/contact',
+            component: 'src/containers/en/ContactUs'
+          },
+          {
+            path: '/products',
+            component: 'src/containers/en/Products'
+          },
+          {
+            path: '/community',
+            component: 'src/containers/en/Community'
+          },
+          {
+            path: '/about',
+            component: 'src/containers/en/AboutUs'
+          },
+          {
+            path: '/events',
+            component: 'src/containers/en/Events',
+            getData: () => ({
+              events,
 
-        }),
-        children: events.events.map(event => ({
-          path: `/${get_link(event.language)}/${event.name.replace(/\s+/g, '-').toLowerCase()}`,
-          // path: `/${event.id}`,
-          component: 'src/containers/Event',
-          getData: () => ({
-            event,
-          }),
-        })),
+            }),
+            children: events.events.map(event => ({
+              path: `/${event.name.replace(/\s+/g, '-').toLowerCase()}`,
+              // path: `/${event.id}`,
+              component: 'src/containers/en/Event',
+              getData: () => ({
+                event,
+              }),
+            })),
+          },
+        ]
+      },
+      {
+        path: '/es',
+        component: 'src/containers/es/Index',
+        children: [
+          {
+            path: '/contacto',
+            component: 'src/containers/es/ContactUs'
+          },
+          {
+            path: '/productos',
+            component: 'src/containers/es/Products'
+          },
+          {
+            path: '/comunidad',
+            component: 'src/containers/es/Community'
+          },
+          {
+            path: '/sobre',
+            component: 'src/containers/es/AboutUs'
+          },
+          {
+            path: '/eventos',
+            component: 'src/containers/es/Events',
+            getData: () => ({
+              events,
+
+            }),
+            children: events.events.map(event => ({
+              path: `/${event.name.replace(/\s+/g, '-').toLowerCase()}`,
+              // path: `/${event.id}`,
+              component: 'src/containers/es/Event',
+              getData: () => ({
+                event,
+              }),
+            })),
+          },
+        ]
       },
       {
         is404: true,

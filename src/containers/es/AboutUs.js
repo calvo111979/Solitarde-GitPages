@@ -18,7 +18,7 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-import Aerial from './images/solitrade-aerial.jpg'
+import Aerial from './../images/solitrade-aerial.jpg'
 
 const ResponsiveContainer = ({ children }) => (
   <div>
@@ -35,7 +35,7 @@ const PageLayout = () => (
     <Segment style={{ padding: '3em 0em' }} vertical>
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em' }}>
-          ABOUT US
+          ACERCA DE NOSOTROS
         </Header>
       </Container>
     </Segment>
@@ -51,24 +51,26 @@ const PageLayout = () => (
         </Grid.Column>
           <Grid.Column width={8}>
             <Segment  basic>
-              <Header as='h3'>SALES AND MARKETING</Header>
+              <Header as='h3'>VENTAS Y MERCADOTENCIA</Header>
               <Divider section />
               <Header as='h4'>
-                Solitrade Group supports customers around the world
-                 by offering a robust portfolio of the highest quality building
-                 products. By focusing on a seamless customer experience, we
-                 ensure that our customers can spend their time focusing on what
-                 they do best—build their business.
+                Solitrade Group apoya a clientes de todo el mundo ofreciendo
+                una sólida cartera de productos de construcción de la más alta
+                 calidad. Al centrarse en una experiencia de servicio al cliente
+                  perfecta, nos aseguramos de que pueden dedicar su tiempo a
+                  centrarse en lo que hacen mejor: construir su negocio. En
+                  esencia, estamos construidos para ayudarle a construir.
                </Header>
-               <Header as='h3'>GLOBAL BRAND AND PRODUCT REPRESENTATION</Header>
+               <Header as='h3'>REPRESENTACIÓN GLOBAL DE MARCAS Y PRODUCTOS</Header>
                <Divider section />
                <Header as='h4'>
-                 As a global trading group, we carefully screen manufacturers
-                  from around the world and compile only the best collection
-                  of glass, insulation and other building products. Our goal is
-                  to ensure that our clients have all the highest quality products
-                  they need to be successful in an increasingly competitive
-                  construction marketplace.
+                 Como un grupo de comercio global, cuidadosamente seleccionamos
+                  a fabricantes de todo el mundo para poder ofrecer los mejores
+                   productos de vidrio, aislamiento y otros materiales para
+                    construcción. Nuestro objetivo es asegurar que nuestros clientes
+                    tengan acceso a productos de la más alta calidad, necesarios
+                     para tener éxito en un mercado de la construcción cada vez
+                     más competitivo.
                 </Header>
               </Segment>
           </Grid.Column>
