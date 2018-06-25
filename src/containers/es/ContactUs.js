@@ -53,12 +53,12 @@ class MobileForm extends Component {
                 <Grid.Column>
                   <Form action="http://solitrade.com/sendmail.php">
                     <Form.Group widths='equal'>
-                      <Form.Input fluid label='Name' placeholder='Nombre' />
+                      <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
-                      <Form.Input fluid label='Phone' placeholder='Teléfono' />
+                      <Form.Input fluid label='Teléfono' placeholder='Teléfono' />
                     </Form.Group>
-                    <Form.Input fluid label='Subject' placeholder='Asunto' />
-                    <Form.TextArea label='About' placeholder='Mensaje' />
+                    <Form.Input fluid label='Asunto' placeholder='Asunto' />
+                    <Form.TextArea label='Mensaje' placeholder='Mensaje' />
                     <Form.Button>Enviar</Form.Button>
                   </Form>
                 </Grid.Column>
@@ -115,12 +115,12 @@ class TabletForm extends Component {
                 <Grid.Column>
                   <Form action="http://solitrade.com/sendmail.php">
                     <Form.Group widths='equal'>
-                      <Form.Input fluid label='Name' placeholder='Nombre' />
+                      <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
-                      <Form.Input fluid label='Phone' placeholder='Teléfono' />
+                      <Form.Input fluid label='Teléfono' placeholder='Teléfono' />
                     </Form.Group>
-                    <Form.Input fluid label='Subject' placeholder='Asunto' />
-                    <Form.TextArea label='About' placeholder='Mensaje' />
+                    <Form.Input fluid label='Asunto' placeholder='Asunto' />
+                    <Form.TextArea label='Mensaje' placeholder='Mensaje' />
                     <Form.Button>Enviar</Form.Button>
                   </Form>
                 </Grid.Column>
@@ -178,12 +178,12 @@ class DesktopForm extends Component {
                 <Grid.Column width={10}>
                   <Form action="http://solitrade.com/sendmail.php">
                     <Form.Group widths='equal'>
-                      <Form.Input fluid label='Name' placeholder='Nombre' />
+                      <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
-                      <Form.Input fluid label='Phone' placeholder='Teléfono' />
+                      <Form.Input fluid label='Teléfono' placeholder='Teléfono' />
                     </Form.Group>
-                    <Form.Input fluid label='Subject' placeholder='Asunto' />
-                    <Form.TextArea label='About' placeholder='Mensaje' />
+                    <Form.Input fluid label='Asunto' placeholder='Asunto' />
+                    <Form.TextArea label='Mensaje' placeholder='Mensaje' />
                     <Form.Button>Submit</Form.Button>
                   </Form>
               </Grid.Column>
