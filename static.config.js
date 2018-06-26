@@ -81,23 +81,23 @@ export default {
         component: 'src/containers/es/Index',
         children: [
           {
-            path: '/contacto',
+            path: '/contact',
             component: 'src/containers/es/ContactUs'
           },
           {
-            path: '/productos',
+            path: '/products',
             component: 'src/containers/es/Products'
           },
           {
-            path: '/comunidad',
+            path: '/community',
             component: 'src/containers/es/Community'
           },
           {
-            path: '/sobre',
+            path: '/about',
             component: 'src/containers/es/AboutUs'
           },
           {
-            path: '/eventos',
+            path: '/events',
             component: 'src/containers/es/Events',
             getData: () => ({
               events,

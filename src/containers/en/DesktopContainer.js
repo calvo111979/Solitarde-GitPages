@@ -37,45 +37,45 @@ class Layout extends React.Component {
   }
 }
 
-function get_en_link(){
-  var path = window.location.pathname;
-  // alert(path)
-  if(path == "/es"){
-    return "/";
-  }else if(path == "/es/sobre"){
-    return "/about";
-  }else if(path == "/es/productos"){
-    return "/products";
-  }else if(path == "/es/comunidad"){
-    return "/community";
-  }else if(path == "/es/eventos"){
-    return "/events";
-  }else if(path == "/es/contacto"){
-    return "/contact";
-  }else if(path == "/es/sobre"){
-    return "/about";
-  }
-}
-
-function get_es_link(){
-  var path = window.location.pathname;
-  // alert(path)
-  if(path == "/"){
-    return "/es";
-  }else if(path == "about"){
-    return "/es/sobre";
-  }else if(path == "/products"){
-    return "/es/productos";
-  }else if(path == "/community"){
-    return "/es/comunidad";
-  }else if(path == "/events"){
-    return "/es/eventos";
-  }else if(path == "/contact"){
-    return "/es/contacto";
-  }else if(path == "/about"){
-    return "/es/sobre";
-  }
-}
+// function get_en_link(){
+//   var path = window.urlString.pathname;
+//   // alert(path)
+//   if(path == "/es"){
+//     return "/";
+//   }else if(path == "/es/sobre"){
+//     return "/about";
+//   }else if(path == "/es/productos"){
+//     return "/products";
+//   }else if(path == "/es/comunidad"){
+//     return "/community";
+//   }else if(path == "/es/eventos"){
+//     return "/events";
+//   }else if(path == "/es/contacto"){
+//     return "/contact";
+//   }else if(path == "/es/sobre"){
+//     return "/about";
+//   }
+// }
+//
+// function get_es_link(){
+//   var path = window.urlString.pathname;
+//   // alert(path)
+//   if(path == "/"){
+//     return "/es";
+//   }else if(path == "about"){
+//     return "/es/sobre";
+//   }else if(path == "/products"){
+//     return "/es/productos";
+//   }else if(path == "/community"){
+//     return "/es/comunidad";
+//   }else if(path == "/events"){
+//     return "/es/eventos";
+//   }else if(path == "/contact"){
+//     return "/es/contacto";
+//   }else if(path == "/about"){
+//     return "/es/sobre";
+//   }
+// }
 
 class TabletContainer extends Component {
   state = {}
@@ -84,7 +84,7 @@ class TabletContainer extends Component {
   showFixedMenu = () => this.setState({ fixed: true })
 
   render() {
-    const { children } = this.props
+    const { children, urlString } = this.props
     const { fixed } = this.state
 
     return (
@@ -111,8 +111,9 @@ class TabletContainer extends Component {
               size='medium'
             >
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item>
+              {/* <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item> */}
+              <Menu.Item as='a' href={`/es/${urlString}`} ><Flag name='es' /></Menu.Item>
 
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
@@ -170,6 +171,7 @@ class TabletContainer extends Component {
 
 TabletContainer.propTypes = {
   children: PropTypes.node,
+  urlString: PropTypes.string,
 }
 
 
@@ -180,7 +182,7 @@ class DesktopContainer extends Component {
   showFixedMenu = () => this.setState({ fixed: true })
 
   render() {
-    const { children } = this.props
+    const { children, urlString } = this.props
     const { fixed } = this.state
 
     return (
@@ -207,8 +209,9 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item>
+              {/* <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item> */}
+              <Menu.Item as='a' href={`/es/${urlString}`}><Flag name='es' /></Menu.Item>
 
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
@@ -268,6 +271,7 @@ class DesktopContainer extends Component {
 
 DesktopContainer.propTypes = {
   children: PropTypes.node,
+  urlString: PropTypes.string,
 }
 
 class MobileContainer extends Component {
@@ -282,7 +286,7 @@ class MobileContainer extends Component {
   handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
 
   render() {
-    const { children } = this.props
+    const { children, urlString } = this.props
     const { sidebarOpened } = this.state
 
     return (
@@ -301,8 +305,9 @@ class MobileContainer extends Component {
             <Menu.Item as='a' href='/community'>US</Menu.Item>
             <Menu.Item as='a' href='/events'>EVENTS</Menu.Item>
             <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
-            <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
-            <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item>
+            {/* <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
+            <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item> */}
+            <Menu.Item as='a' href={`/es/${urlString}`}><Flag name='es' /></Menu.Item>
 
           </Sidebar>
 
@@ -345,18 +350,20 @@ class MobileContainer extends Component {
 
 MobileContainer.propTypes = {
   children: PropTypes.node,
+  urlString: PropTypes.string,
 }
 
-const ResponsiveContainer = ({ children }) => (
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
-    <MobileContainer>{children}</MobileContainer>
-    <TabletContainer>{children}</TabletContainer>
+    <DesktopContainer urlString={urlString}>{children}</DesktopContainer>
+    <MobileContainer urlString={urlString}>{children}</MobileContainer>
+    <TabletContainer urlString={urlString}>{children}</TabletContainer>
   </div>
-)
+);
 
 ResponsiveContainer.propTypes = {
   children: PropTypes.node,
+  urlString: PropTypes.string,
 }
 
 export default ResponsiveContainer

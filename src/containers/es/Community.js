@@ -19,9 +19,12 @@ import {
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
 import MapImg from './../images/new-business-map.png'
-const ResponsiveContainer = ({ children }) => (
+
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      urlString={urlString}
+      >{children}</DesktopContainer>
   </div>
 )
 
@@ -30,7 +33,8 @@ ResponsiveContainer.propTypes = {
 }
 
 const PageLayout = () => (
-  <ResponsiveContainer>
+  <ResponsiveContainer
+    urlString="community">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         NUESTRA <span style={{color:"#2185d0"}}>COMUNIDAD</span>

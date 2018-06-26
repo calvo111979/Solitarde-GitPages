@@ -20,13 +20,15 @@ import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
 import { Form } from 'semantic-ui-react'
 
-const MenuAndBody = ({ children }) => (
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      urlString={urlString}
+      >{children}</DesktopContainer>
   </div>
 )
 
-MenuAndBody.propTypes = {
+DesktopContainer.propTypes = {
   children: PropTypes.node,
 }
 
@@ -39,7 +41,7 @@ class MobileForm extends Component {
 
     return (
       <Responsive {...Responsive.onlyMobile}>
-        <MenuAndBody>
+        <DesktopContainer urlString="contact">
           <Segment style={{ padding: '3em 0em' }} vertical>
             <Container text textAlign='center'>
               <Header as='h1' style={{ fontSize: '2em' }}>
@@ -83,7 +85,7 @@ class MobileForm extends Component {
               </Grid>
             </Segment>
           <Footer />
-        </MenuAndBody>
+        </DesktopContainer>
       </Responsive>
     )
   }
@@ -101,7 +103,7 @@ class TabletForm extends Component {
 
     return (
       <Responsive {...Responsive.onlyTablet}>
-        <MenuAndBody>
+        <DesktopContainer urlString="contact">
           <Segment style={{ padding: '3em 0em' }} vertical>
             <Container text textAlign='center'>
               <Header as='h1' style={{ fontSize: '2em' }}>
@@ -145,7 +147,7 @@ class TabletForm extends Component {
               </Grid>
             </Segment>
           <Footer />
-        </MenuAndBody>
+        </DesktopContainer>
       </Responsive>
     )
   }
@@ -164,7 +166,7 @@ class DesktopForm extends Component {
     const { value } = this.state
     return (
       <Responsive {...Responsive.onlyComputer}>
-        <MenuAndBody>
+        <DesktopContainer urlString="contact">
           <Segment style={{ padding: '3em 0em' }} vertical>
             <Container text textAlign='center'>
               <Header as='h1' style={{ fontSize: '2em' }}>
@@ -202,7 +204,7 @@ class DesktopForm extends Component {
             </Grid>
           </Segment>
         <Footer />
-      </MenuAndBody>
+      </DesktopContainer>
     </Responsive>
     )
   }

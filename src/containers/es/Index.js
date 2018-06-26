@@ -137,7 +137,6 @@ class DesktopContainer extends Component {
               <Grid.Row style={{ padding: "1 0em" }}>
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
@@ -166,7 +165,7 @@ class DesktopContainer extends Component {
                   {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                   {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                   <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                  <Menu.Item as='a' href='/es/es'>INICIO</Menu.Item>
+                  <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
                   <Menu.Item as='a' href='/es/sobre'>SOBRE NOSOTROS</Menu.Item>
                   <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
                   <Dropdown text='COMUNIDAD' pointing className='link item'>
@@ -239,7 +238,6 @@ class TabletContainer extends Component {
               <Grid.Row>
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
@@ -268,7 +266,7 @@ class TabletContainer extends Component {
                   {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                   {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                   <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                  <Menu.Item as='a' href='/es/es'>INICIO</Menu.Item>
+                  <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
                   <Menu.Item as='a' href='/es/sobre'>SOBRE NOSOTROS</Menu.Item>
                   <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
                   <Dropdown text='COMUNIDAD' pointing className='link item'>
@@ -331,7 +329,7 @@ class MobileContainer extends Component {
             {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
             {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
             <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-            <Menu.Item as='a' href='/es/es'>INICIO</Menu.Item>
+            <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
             <Menu.Item as='a' href='/es/sobre'>SOBRE NOSOTROS</Menu.Item>
             <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
             <Menu.Item href='/es/comunidad'>COMUNIDAD</Menu.Item>
@@ -358,7 +356,6 @@ class MobileContainer extends Component {
                     <Icon name='sidebar' size='large' />
                   </Menu.Item>
                   <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-                  <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
                   <Menu.Item position='right'>
                     {/* <Icon name='phone'/> +1-864-498-8691  /
                     <Icon name='mail'/> info@solitrade.com */}

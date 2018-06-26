@@ -26,9 +26,11 @@ import Silvercote from './../images/logo-silvercote.png'
 import Insudry from './../images/insudry.png'
 import Garland from './../images/garland.png'
 
-const ResponsiveContainer = ({ children }) => (
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      urlString={urlString}
+      >{children}</DesktopContainer>
   </div>
 )
 
@@ -37,7 +39,8 @@ ResponsiveContainer.propTypes = {
 }
 
 const PageLayout = () => (
-  <ResponsiveContainer>
+  <ResponsiveContainer
+    urlString="products">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         OUR <span style={{color:"#2185d0"}}>PRODUCTS</span>

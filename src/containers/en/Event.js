@@ -39,7 +39,9 @@ function format_images_slider(images_json){
 }
 const ResponsiveContainer = ({ children }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      location='event'
+      >{children}</DesktopContainer>
   </div>
 )
 

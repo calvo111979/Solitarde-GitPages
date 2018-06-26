@@ -45,15 +45,19 @@ function format_events(events){
 
   return formatted_events
 }
-const ResponsiveContainer = ({ children }) => (
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      urlString={urlString}
+      >{children}</DesktopContainer>
   </div>
 )
 
 
 export default withRouteData(({ events }) => (
-  <ResponsiveContainer>
+  <ResponsiveContainer
+    urlString='events'
+  >
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         NUESTROS <span style={{color:"#2185d0"}}>EVENTOS</span>

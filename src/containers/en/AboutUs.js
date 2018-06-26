@@ -20,9 +20,11 @@ import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
 import Aerial from './../images/solitrade-aerial.jpg'
 
-const ResponsiveContainer = ({ children }) => (
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      urlString={urlString}
+      >{children}</DesktopContainer>
   </div>
 )
 
@@ -31,7 +33,8 @@ ResponsiveContainer.propTypes = {
 }
 
 const PageLayout = () => (
-  <ResponsiveContainer>
+  <ResponsiveContainer
+    urlString="about">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         ABOUT <span style={{color:"#2185d0"}}>US</span>
