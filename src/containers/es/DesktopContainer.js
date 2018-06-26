@@ -113,7 +113,7 @@ class TabletContainer extends Component {
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               {/* <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
               <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item> */}
-              <Menu.Item as='a' href={`${urlString}`} > <Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href={`/${urlString}`} > <Flag name='us' /></Menu.Item>
 
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
@@ -314,7 +314,7 @@ class MobileContainer extends Component {
             <Menu.Item as='a' href='/es/community'>NOSOTROS</Menu.Item>
             <Menu.Item as='a' href='/es/events'>EVENTOS</Menu.Item>
             <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
-            <Menu.Item as='a' href={`${urlString}`} ><Flag name='us' /></Menu.Item>
+            <Menu.Item as='a' href={`/${urlString}`} ><Flag name='us' /></Menu.Item>
 
           </Sidebar>
 
