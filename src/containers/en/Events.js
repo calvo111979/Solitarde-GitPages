@@ -54,20 +54,23 @@ const ResponsiveContainer = ({ children }) => (
 
 export default withRouteData(({ events }) => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em' }}>
-          Events
-        </Header>
-      </Container>
-    </Segment>
-    <Segment basic>
+    <Container text textAlign='center'>
+      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+        OUR <span style={{color:"#2185d0"}}>EVENTS</span>
+        {/* <Divider style={{color:"#2185d0"}}/> */}
+        <hr style={{
+          width: "10%",
+          border: "1px solid #2185d0",
+        }}/>
+      </Header>
+    </Container>
+    <Container style={{padding: "0em 4em"}}>
       <Card.Group
         items={format_events(events.events)}
         centered
       >
       </Card.Group>
-    </Segment>
+    </Container>
     <Footer />
   </ResponsiveContainer>
 

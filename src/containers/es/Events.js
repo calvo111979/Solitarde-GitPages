@@ -39,7 +39,7 @@ function format_events(events){
         // href: event.id + '/',
         // href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
         image: path + event.images[0].src,
-        href: event.name.replace(/\s+/g, '-').toLowerCase() + '/'
+        href: event.name.replace(/\s+/g, '-').toLowerCase() + '/',
       }
   ))
 
@@ -64,13 +64,13 @@ export default withRouteData(({ events }) => (
         }}/>
       </Header>
     </Container>
-    <Segment basic>
+    <Container style={{padding: "0em 4em"}}>
       <Card.Group
         items={format_events(events.events)}
         centered
       >
       </Card.Group>
-    </Segment>
+    </Container>
     <Footer />
   </ResponsiveContainer>
 

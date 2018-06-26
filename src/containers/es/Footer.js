@@ -22,7 +22,7 @@ class TabletFooter extends Component {
 
       return (
         <Responsive {...Responsive.onlyTablet} style={{ flex: 1 }}>
-          <Segment inverted  vertical style={{ padding: '5em 0em', backgroundColor: '#2A2A2A'}}>
+          <Segment inverted  vertical style={{ padding: '5em 1em', backgroundColor: '#2A2A2A'}}>
             <Container>
               <Grid divided inverted stackable>
                 <Grid.Row>
@@ -88,7 +88,7 @@ class Footer extends Component {
 
       return (
         <Responsive {...Responsive.onlyComputer} style={{ flex: 1 }}>
-          <Segment inverted  vertical style={{ padding: '5em 0em', backgroundColor: '#2A2A2A'}}>
+          <Segment inverted  vertical style={{ padding: '5em 1em', backgroundColor: '#2A2A2A'}}>
             <Container>
               <Grid divided inverted stackable>
                 <Grid.Row>

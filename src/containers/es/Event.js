@@ -71,6 +71,7 @@ export default withRouteData(({ event }) => (
       <Container style={{ padding: '2em 6em' }}>
         {/* <Gallery images={format_images_gallery(event.images)}/> */}
         <ImageGallery items={format_images_slider(event.images)} />
+        console.log(format_images_slider(event.images));
       </Container>
       <Footer />
     </ResponsiveContainer>
