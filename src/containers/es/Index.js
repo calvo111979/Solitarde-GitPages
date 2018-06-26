@@ -75,7 +75,7 @@ const HomepageHeading = ({ mobile }) => (
     <br/>
     <br/>
     <br/>
-    <Button primary size='big' href="sobre">
+    <Button primary size='big' href="about">
       MÁS INFORMACIÓN
     </Button>
     &nbsp;
@@ -88,7 +88,7 @@ const HomepageHeading = ({ mobile }) => (
     &nbsp;
     &nbsp;
     &nbsp;
-    <Button color='white' inverted size='big' href="contacto" >
+    <Button color='white' inverted size='big' href="contact" >
       CONTÁCTANOS
     </Button>
   </Container>
@@ -166,15 +166,15 @@ class DesktopContainer extends Component {
                   {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                   <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
                   <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
-                  <Menu.Item as='a' href='/es/sobre'>SOBRE NOSOTROS</Menu.Item>
-                  <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
+                  <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
+                  <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
                   <Dropdown text='COMUNIDAD' pointing className='link item'>
                     <Dropdown.Menu>
-                      <Dropdown.Item href='/es/comunidad'>COMUNIDAD</Dropdown.Item>
-                      <Dropdown.Item href='/es/eventos'>EVENTOS</Dropdown.Item>
+                      <Dropdown.Item href='/es/community'>COMUNIDAD</Dropdown.Item>
+                      <Dropdown.Item href='/es/events'>EVENTOS</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                  <Menu.Item as='a' href='/es/contacto' >CONTÁCTANOS</Menu.Item>
+                  <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
                   {/* <Menu.Item>
                     <Icon name='phone'/> +1-864-498-8691
                   </Menu.Item>
@@ -267,15 +267,15 @@ class TabletContainer extends Component {
                   {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                   <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
                   <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
-                  <Menu.Item as='a' href='/es/sobre'>SOBRE NOSOTROS</Menu.Item>
-                  <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
+                  <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
+                  <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
                   <Dropdown text='COMUNIDAD' pointing className='link item'>
                     <Dropdown.Menu>
-                      <Dropdown.Item href='/es/comunidad'>COMUNIDAD</Dropdown.Item>
-                      <Dropdown.Item href='/es/eventos'>EVENTOS</Dropdown.Item>
+                      <Dropdown.Item href='/es/community'>COMUNIDAD</Dropdown.Item>
+                      <Dropdown.Item href='/es/events'>EVENTOS</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                  <Menu.Item as='a' href='/es/contacto' >CONTÁCTANOS</Menu.Item>
+                  <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
                   {/* <Menu.Item>
                     <Icon name='phone'/> +1-864-498-8691
                   </Menu.Item>
@@ -330,11 +330,11 @@ class MobileContainer extends Component {
             {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
             <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
             <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
-            <Menu.Item as='a' href='/es/sobre'>SOBRE NOSOTROS</Menu.Item>
-            <Menu.Item as='a' href='/es/productos'>PRODUCTOS</Menu.Item>
-            <Menu.Item href='/es/comunidad'>COMUNIDAD</Menu.Item>
-            <Menu.Item href='/es/eventos'>EVENTOS</Menu.Item>
-            <Menu.Item as='a' href='/es/contacto' >CONTÁCTANOS</Menu.Item>
+            <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
+            <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
+            <Menu.Item href='/es/community'>COMUNIDAD</Menu.Item>
+            <Menu.Item href='/es/events'>EVENTOS</Menu.Item>
+            <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
 
           </Sidebar>
 

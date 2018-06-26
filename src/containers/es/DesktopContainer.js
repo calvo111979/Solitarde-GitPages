@@ -181,13 +181,6 @@ class DesktopContainer extends Component {
     super(props);
     this.state = {};
   }
-  componentWillMount() {
-    console.log(this.props);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
-  }
 
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
@@ -195,7 +188,6 @@ class DesktopContainer extends Component {
   render() {
     const { children, urlString } = this.props
     const { fixed } = this.state
-    console.log('render props', this.props)
     return (
       <Responsive {...Responsive.onlyComputer}>
         {/* <Favicon url={Favicon} /> */}
