@@ -37,6 +37,45 @@ class Layout extends React.Component {
   }
 }
 
+function get_en_link(){
+  var path = window.location.pathname;
+  // alert(path)
+  if(path == "/es"){
+    return "/";
+  }else if(path == "/es/sobre"){
+    return "/about";
+  }else if(path == "/es/productos"){
+    return "/products";
+  }else if(path == "/es/comunidad"){
+    return "/community";
+  }else if(path == "/es/eventos"){
+    return "/events";
+  }else if(path == "/es/contacto"){
+    return "/contact";
+  }else if(path == "/es/sobre"){
+    return "/about";
+  }
+}
+
+function get_es_link(){
+  var path = window.location.pathname;
+  // alert(path)
+  if(path == "/"){
+    return "/es";
+  }else if(path == "about"){
+    return "/es/sobre";
+  }else if(path == "/products"){
+    return "/es/productos";
+  }else if(path == "/community"){
+    return "/es/comunidad";
+  }else if(path == "/events"){
+    return "/es/eventos";
+  }else if(path == "/contact"){
+    return "/es/contacto";
+  }else if(path == "/about"){
+    return "/es/sobre";
+  }
+}
 
 class TabletContainer extends Component {
   state = {}
@@ -72,8 +111,8 @@ class TabletContainer extends Component {
               size='medium'
             >
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+              <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item>
 
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
@@ -168,8 +207,8 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+              <Menu.Item as='a'  href={get_en_link()}><Flag name='us' /></Menu.Item>
+              <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item>
 
               <Menu.Item position='right'>
                 <Icon name='phone'/> +1-864-498-8691
@@ -262,8 +301,8 @@ class MobileContainer extends Component {
             <Menu.Item as='a' href='/es/comunidad'>NOSOTROS</Menu.Item>
             <Menu.Item as='a' href='/es/eventos'>EVENTOS</Menu.Item>
             <Menu.Item as='a' href='/es/contacto' >CONTÁCTANOS</Menu.Item>
-            <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-            <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
+            <Menu.Item as='a'  href={get_en_link()}><Flag name='us' /></Menu.Item>
+            <Menu.Item as='a' href={get_es_link()}><Flag name='es' /></Menu.Item>
 
           </Sidebar>
 

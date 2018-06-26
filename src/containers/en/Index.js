@@ -411,10 +411,11 @@ const HomepageLayout = () => (
           <Grid.Column width={8}>
               <Image src={CostumerService} size='medium' floated='left' />
               <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
-              <Container>
+              <Container style={{padding:"0em "}}>
                 <hr style={{
                   width: "40%",
                   border: "1px solid #2185d0",
+                  right: "1000px"
                 }}/>
               </Container>
               <Header as='h4'>Efficient, secure and reliable delveries.</Header>
