@@ -53,7 +53,7 @@ class MobileForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <Form action="http://solitrade.com/sendmail.php">
+                  <Form netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -118,7 +118,7 @@ class TabletForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <Form action="http://solitrade.com/sendmail.php">
+                  <Form netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -184,7 +184,7 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <Form action="http://solitrade.com/sendmail.php">
+                  <Form netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
