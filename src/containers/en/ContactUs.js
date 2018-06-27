@@ -56,7 +56,7 @@ class MobileForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <Form name="info" method="POST" netlify>
+                  <form name="info" method="POST" netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Name' placeholder='Name' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -65,7 +65,7 @@ class MobileForm extends Component {
                     <Form.Input fluid label='Subject' placeholder='Subject' />
                     <Form.TextArea label='About' placeholder='Tell us more' />
                     <Form.Button>Submit</Form.Button>
-                  </Form>
+                  </form>
                 </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
@@ -121,7 +121,7 @@ class TabletForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <Form name="info" method="POST" netlify>
+                  <form name="info" method="POST" netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Name' placeholder='Name' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -130,7 +130,7 @@ class TabletForm extends Component {
                     <Form.Input fluid label='Subject' placeholder='Subject' />
                     <Form.TextArea label='About' placeholder='Tell us more' />
                     <Form.Button>Submit</Form.Button>
-                  </Form>
+                  </form>
                 </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
@@ -189,7 +189,7 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <Form name="info" method="POST" netlify>
+                  <form name="info" method="POST" netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Name' placeholder='Name' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -198,7 +198,7 @@ class DesktopForm extends Component {
                     <Form.Input fluid label='Subject' placeholder='Subject' />
                     <Form.TextArea label='About' placeholder='Tell us more' />
                     <Form.Button>Submit</Form.Button>
-                  </Form>
+                  </form>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
                   <Header as='h4' content='CONTACT INFO' />
