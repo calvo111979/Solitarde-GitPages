@@ -105,7 +105,7 @@ class TabletForm extends Component {
       <Responsive {...Responsive.onlyTablet}>
         <DesktopContainer urlString="contact">
           <Container text textAlign='center'>
-            <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+            <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
               CONTÁCTA<span style={{color:"#2185d0"}}>NOS</span>
               {/* <Divider style={{color:"#2185d0"}}/> */}
               <hr style={{

@@ -42,13 +42,16 @@ class MobileForm extends Component {
     return (
       <Responsive {...Responsive.onlyMobile}>
         <MenuAndBody urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} vertical>
-            <Container text textAlign='center'>
-              <Header as='h1' style={{ fontSize: '2em' }}>
-                CONTACT US
-              </Header>
-            </Container>
-          </Segment>
+          <Container text textAlign='center'>
+            <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
+              CONTACT <span style={{color:"#2185d0"}}>US</span>
+              {/* <Divider style={{color:"#2185d0"}}/> */}
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+              }}/>
+            </Header>
+          </Container>
           <Segment style={{ padding: '3em 1em' }} vertical>
             <Grid>
               <Grid.Row>
@@ -104,13 +107,16 @@ class TabletForm extends Component {
     return (
       <Responsive {...Responsive.onlyTablet}>
         <MenuAndBody urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} vertical>
-            <Container text textAlign='center'>
-              <Header as='h1' style={{ fontSize: '2em' }}>
-                CONTACT US
-              </Header>
-            </Container>
-          </Segment>
+          <Container text textAlign='center'>
+            <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
+              CONTACT <span style={{color:"#2185d0"}}>US</span>
+              {/* <Divider style={{color:"#2185d0"}}/> */}
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+              }}/>
+            </Header>
+          </Container>
           <Segment style={{ padding: '3em 1em' }} vertical>
             <Grid>
               <Grid.Row>
@@ -169,13 +175,16 @@ class DesktopForm extends Component {
     return (
       <Responsive {...Responsive.onlyComputer}>
         <MenuAndBody urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} basic vertical>
-            <Container text textAlign='center'>
-              <Header as='h1' style={{ fontSize: '2em' }}>
-                CONTACT US
-              </Header>
-            </Container>
-          </Segment>
+          <Container text textAlign='center'>
+            <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
+              CONTACT <span style={{color:"#2185d0"}}>US</span>
+              {/* <Divider style={{color:"#2185d0"}}/> */}
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+              }}/>
+            </Header>
+          </Container>
           <Segment style={{ padding: '5em 25%', paddingBottom: "5em" }} basic vertical>
             <Grid divided='vertically'>
               <Grid.Row columns={3}>

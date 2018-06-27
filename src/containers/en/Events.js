@@ -67,7 +67,7 @@ export default withRouteData(({ events }) => (
         }}/>
       </Header>
     </Container>
-    <Container style={{padding: "0em 4em"}}>
+    <Container style={{padding: "0em 4em", paddingBottom: "2em"}}>
       <Card.Group
         items={format_events(events.events)}
         centered

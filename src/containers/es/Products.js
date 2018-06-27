@@ -42,7 +42,7 @@ const PageLayout = () => (
   <ResponsiveContainer
     urlString="products">
     <Container text textAlign='center'>
-      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+      <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
         NUESTROS <span style={{color:"#2185d0"}}>PRODUCTOS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
