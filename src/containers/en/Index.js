@@ -132,9 +132,9 @@ class DesktopContainer extends Component {
               // pointing={!fixed}
               // secondary={!fixed}
               size='large'
-              style = {{margin: 0, padding: '0em 1em'}}
+              style = {{margin: 0, padding: '1em 1em'}}
             ><Grid>
-              <Grid.Row>
+              <Grid.Row style={{padding: "0em 0em"}}>
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
               <Menu.Item position='right'>
@@ -153,7 +153,7 @@ class DesktopContainer extends Component {
                 <Image src={SideLogo} size='small' />
               </Menu.Item> */}
             </Grid.Row>
-            <Grid.Row centered>
+            <Grid.Row centered style={{padding: "0em 0em"}}>
               <Menu
                 fixed={fixed ? 'top' : null}
                 inverted={!fixed}
@@ -233,9 +233,9 @@ class TabletContainer extends Component {
               // pointing={!fixed}
               // secondary={!fixed}
               size='large'
-              style = {{margin: 0}}
+              style = {{margin: 0, padding: '1em 1em'}}
             ><Grid>
-              <Grid.Row>
+              <Grid.Row centered style={{padding: "0em 0em"}}>
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
               <Menu.Item position='right'>
@@ -254,7 +254,8 @@ class TabletContainer extends Component {
                 <Image src={SideLogo} size='small' />
               </Menu.Item> */}
             </Grid.Row>
-            <Grid.Row centered>
+            <Grid.Row centered style={{padding: "0em 0em"}}>
+
               <Menu
                 fixed={fixed ? 'top' : null}
                 inverted={!fixed}
