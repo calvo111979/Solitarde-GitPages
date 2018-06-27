@@ -21,7 +21,12 @@ class TabletFooter extends Component {
     render() {
 
       return (
-        <Responsive {...Responsive.onlyTablet} style={{ flex: 1 }}>
+        <Responsive {...Responsive.onlyTablet} style={{
+          position: "relative",
+          marginTop: "-1800px",
+          height: "1800px",
+          clear: "both"
+        }}>
           <Segment inverted  vertical style={{ padding: '5em 1em', backgroundColor: '#2A2A2A'}}>
             <Container>
               <Grid divided inverted stackable>

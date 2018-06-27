@@ -169,14 +169,14 @@ class DesktopForm extends Component {
     return (
       <Responsive {...Responsive.onlyComputer}>
         <MenuAndBody urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} vertical>
+          <Segment style={{ padding: '3em 0em' }} basic vertical>
             <Container text textAlign='center'>
               <Header as='h1' style={{ fontSize: '2em' }}>
                 CONTACT US
               </Header>
             </Container>
           </Segment>
-          <Segment style={{ padding: '3% 25%' }} vertical>
+          <Segment style={{ padding: '3% 25%' }} basic vertical>
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>

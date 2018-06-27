@@ -104,14 +104,14 @@ class TabletForm extends Component {
     return (
       <Responsive {...Responsive.onlyTablet}>
         <DesktopContainer urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} vertical>
+          <Segment style={{ padding: '3em 0em' }} basic vertical>
             <Container text textAlign='center'>
               <Header as='h1' style={{ fontSize: '2em' }}>
                 CONTACTANOS
               </Header>
             </Container>
           </Segment>
-          <Segment style={{ padding: '3em 1em' }} vertical>
+          <Segment style={{ padding: '3em 1em' }} basic vertical>
             <Grid>
               <Grid.Row>
                 <Grid.Column>
@@ -174,7 +174,7 @@ class DesktopForm extends Component {
               </Header>
             </Container>
           </Segment>
-          <Segment style={{ padding: '3% 25%' }} vertical>
+          <Segment style={{ padding: '3% 25%' }} basic vertical>
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
@@ -189,7 +189,7 @@ class DesktopForm extends Component {
                     <Form.Button>Submit</Form.Button>
                   </Form>
               </Grid.Column>
-              <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
+              <Grid.Column  style={{ padding: '0em 5%' }} basic width={6}>
                   <Header as='h4' content='INFO DE CONTACTO' />
                       <Grid.Column style={{ padding: '1em 0em' }}>
                         <Icon name='mail' color='blue' size='big'/>

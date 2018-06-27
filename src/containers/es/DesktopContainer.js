@@ -133,7 +133,7 @@ class TabletContainer extends Component {
             </Menu>
             <Menu
               fixed={fixed ? 'top' : null}
-              inverted={!fixed}
+              // inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='medium'
@@ -143,7 +143,11 @@ class TabletContainer extends Component {
                 {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                 <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
+                <Menu.Item>
+                  <Image src={SimpleLogo} size='mini' />
+                </Menu.Item>
                 <Menu.Item as='a' href='/es/' position='right'>INICIO</Menu.Item>
+                <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                 <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                 <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
                 <Dropdown text='COMUNIDAD' pointing className='link item'>
@@ -154,9 +158,6 @@ class TabletContainer extends Component {
                 </Dropdown>
                 <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
 
-                <Menu.Item position='right'>
-                  <Image src={SimpleLogo} size='mini' />
-                </Menu.Item>
 
 
               </Container>
@@ -233,7 +234,7 @@ class DesktopContainer extends Component {
             </Menu>
             <Menu
               fixed={fixed ? 'top' : null}
-              inverted={!fixed}
+              // inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='large'
@@ -242,7 +243,11 @@ class DesktopContainer extends Component {
                 {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                 {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                 <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                <Menu.Item as='a' href='/es/'>INICIO</Menu.Item>
+                <Menu.Item style={{ right: '0px'}}>
+                  <Image src={SideLogo} size='small' />
+                </Menu.Item>
+                <Menu.Item position='right' as='a' href='/es/'>INICIO</Menu.Item>
+                <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                 <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                 <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
                 <Dropdown text='COMUNIDAD' pointing className='link item'>
@@ -258,9 +263,6 @@ class DesktopContainer extends Component {
                 <Menu.Item>
                   <Icon name='mail'/> info@solitrade.com
                 </Menu.Item> */}
-                <Menu.Item position='right' style={{ right: '0px'}}>
-                  <Image src={SideLogo} size='small' />
-                </Menu.Item>
               </Container>
             </Menu>
           </Segment>

@@ -49,7 +49,7 @@ const PageLayout = () => (
       container
       stackable
       divided='vertically'
-      style={{ padding: '3% 0%' }}
+      style={{ padding: '1em 0%' }}
      >
       <Grid.Row>
         <Grid.Column width={8}>
@@ -57,6 +57,8 @@ const PageLayout = () => (
         </Grid.Column>
           <Grid.Column width={8}>
             <Segment  basic>
+              <Container text>
+
               <Header as='h3'>VENTAS Y MERCADOTENCIA</Header>
               <hr style={{
                 width: "10%",
@@ -64,14 +66,14 @@ const PageLayout = () => (
                 marginLeft: 0,
                 padding: '0% 1em'
               }}/>
-              <Header as='h4'>
+              <p>
                 Solitrade Group apoya a clientes de todo el mundo ofreciendo
                 una sólida cartera de productos de construcción de la más alta
                  calidad. Al centrarse en una experiencia de servicio al cliente
                   perfecta, nos aseguramos de que pueden dedicar su tiempo a
                   centrarse en lo que hacen mejor: construir su negocio. En
                   esencia, estamos construidos para ayudarle a construir.
-               </Header>
+               </p>
                <Header as='h3'>REPRESENTACIÓN GLOBAL DE MARCAS Y PRODUCTOS</Header>
                <hr style={{
                  width: "10%",
@@ -79,7 +81,7 @@ const PageLayout = () => (
                  marginLeft: 0,
                  padding: '0% 1em'
                }}/>
-               <Header as='h4'>
+               <p>
                  Como un grupo de comercio global, cuidadosamente seleccionamos
                   a fabricantes de todo el mundo para poder ofrecer los mejores
                    productos de vidrio, aislamiento y otros materiales para
@@ -87,7 +89,8 @@ const PageLayout = () => (
                     tengan acceso a productos de la más alta calidad, necesarios
                      para tener éxito en un mercado de la construcción cada vez
                      más competitivo.
-                </Header>
+                </p>
+              </Container>
               </Segment>
           </Grid.Column>
         </Grid.Row>

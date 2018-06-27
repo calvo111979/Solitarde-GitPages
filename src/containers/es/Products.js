@@ -73,10 +73,10 @@ const PageLayout = () => (
                 <Grid>
                   <Grid.Row columns={2}>
                     <Grid.Column>
-                      <Image centered src={Knauf} size='tiny' />
+                      <Image centered src={Knauf} size='huge' />
                     </Grid.Column>
                     <Grid.Column>
-                      <Image centered src={Silvercote} size='tiny' />
+                      <Image centered src={Silvercote} size='huge' />
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -98,10 +98,10 @@ const PageLayout = () => (
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image centered src={Insudry} size='tiny' />
+                  <Image centered src={Insudry} size='huge' />
                 </Grid.Column>
                 <Grid.Column>
-                  <Image centered src={Garland} size='tiny' style={{ padding: '0em -30em' }}/>
+                  <Image centered src={Garland} size='huge'/>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
