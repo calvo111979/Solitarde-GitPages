@@ -61,7 +61,7 @@ export default withRouteData(({ event }) => (
     <ResponsiveContainer>
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
-          {event.name}
+          {event.es_name}
           <hr style={{
             width: "10%",
             border: "1px solid #2185d0",

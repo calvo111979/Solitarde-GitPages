@@ -104,13 +104,16 @@ class TabletForm extends Component {
     return (
       <Responsive {...Responsive.onlyTablet}>
         <DesktopContainer urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} basic vertical>
-            <Container text textAlign='center'>
-              <Header as='h1' style={{ fontSize: '2em' }}>
-                CONTACTANOS
-              </Header>
-            </Container>
-          </Segment>
+          <Container text textAlign='center'>
+            <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+              CONTÁCTA<span style={{color:"#2185d0"}}>NOS</span>
+              {/* <Divider style={{color:"#2185d0"}}/> */}
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+              }}/>
+            </Header>
+          </Container>
           <Segment style={{ padding: '3em 1em' }} basic vertical>
             <Grid>
               <Grid.Row>
@@ -167,14 +170,17 @@ class DesktopForm extends Component {
     return (
       <Responsive {...Responsive.onlyComputer}>
         <DesktopContainer urlString="contact">
-          <Segment style={{ padding: '3em 0em' }} vertical>
-            <Container text textAlign='center'>
-              <Header as='h1' style={{ fontSize: '2em' }}>
-                CONTACTÁNOS
-              </Header>
-            </Container>
-          </Segment>
-          <Segment style={{ padding: '3% 25%' }} basic vertical>
+          <Container text textAlign='center'>
+            <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+              CONTÁCTA<span style={{color:"#2185d0"}}>NOS</span>
+              {/* <Divider style={{color:"#2185d0"}}/> */}
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+              }}/>
+            </Header>
+          </Container>
+          <Segment style={{ padding: '5em 25%', paddingBottom: "5em" }} basic vertical>
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>

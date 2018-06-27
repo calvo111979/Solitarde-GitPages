@@ -176,7 +176,7 @@ class DesktopForm extends Component {
               </Header>
             </Container>
           </Segment>
-          <Segment style={{ padding: '3% 25%' }} basic vertical>
+          <Segment style={{ padding: '5em 25%', paddingBottom: "5em" }} basic vertical>
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>

@@ -48,8 +48,7 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
-      style={{ padding: '1em 0%' }}
+      style={{ padding: '2em 1em', paddingBottom: "5em" }}
      >
       <Grid.Row>
         <Grid.Column width={8}>

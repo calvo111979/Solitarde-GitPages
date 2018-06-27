@@ -133,7 +133,7 @@ class TabletContainer extends Component {
             </Menu>
             <Menu
               fixed={fixed ? 'top' : null}
-              inverted={!fixed}
+              // inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
               size='medium'
