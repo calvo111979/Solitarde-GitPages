@@ -229,9 +229,6 @@ class DesktopForm extends Component {
 
 const Forms = ({ children }) => (
   <div>
-    <DesktopForm>{children}</DesktopForm>
-    <MobileForm>{children}</MobileForm>
-    <TabletForm>{children}</TabletForm>
   </div>
 )
 
