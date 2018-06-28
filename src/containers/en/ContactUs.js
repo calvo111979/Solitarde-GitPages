@@ -190,33 +190,27 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <form name="info" method="POST" class="ui form" action="/contact" data-netlify="true">
-                    <div class="equal width fields">
-                      <div class="field"><label>Name</label>
-                        <div class="ui fluid input"><input placeholder="Name" type="text" /></div>
-                      </div>
-                      <div class="field"><label>Email</label>
-                        <div class="ui fluid input"><input placeholder="Email" type="text"/></div>
-                      </div>
-                      <div class="field"><label>Phone</label>
-                        <div class="ui fluid input"><input placeholder="Phone" type="text" /></div>
-                      </div>
-                    </div>
-                    <div class="field"><label>Subject</label>
-                      <div class="ui fluid input"><input placeholder="Subject" type="text" /></div>
-                    </div>
-                    <div class="field"><label>About</label><textarea placeholder="Tell us more" rows="3"></textarea></div>
-                    <input type="hidden" name="form-name" value="info" />
-                    <button class="ui button" type="submit">Submit</button>
-                  </form>
                   <NetlifyForm>{formState => (
                     <div>
                         { formState.loading && 'Loading...' }
                         { formState.error && 'Error.' }
                         { formState.success && 'Success.' }
-                        <input type='text' name='Name' required />
-                        <textarea name='Message' required />
-                        <button>Submit</button>
+                        <div class="equal width fields">
+                          <div class="field"><label>Name</label>
+                            <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
+                          </div>
+                          <div class="field"><label>Email</label>
+                            <div class="ui fluid input"><input placeholder="Email" name="email" type="text" required/></div>
+                          </div>
+                          <div class="field"><label>Phone</label>
+                            <div class="ui fluid input"><input placeholder="Phone" name="phone" type="text" required/></div>
+                          </div>
+                        </div>
+                        <div class="field"><label>Subject</label>
+                          <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
+                        </div>
+                        <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
+                        <button class="ui button">Submit</button>
                     </div>
                   )}
                   </NetlifyForm>
