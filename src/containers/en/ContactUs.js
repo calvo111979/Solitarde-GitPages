@@ -84,6 +84,7 @@ export default class extends React.Component {
                                 <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
                               </div>
                               <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
+                               <div netlify-recaptcha></div>
                               <button class="ui button" type="submit">Submit</button>
                         </form>
                       )}
