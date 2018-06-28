@@ -205,7 +205,7 @@ class DesktopForm extends Component {
                       <div class="ui fluid input"><input placeholder="Subject" type="text" /></div>
                     </div>
                     <div class="field"><label>About</label><textarea placeholder="Tell us more" rows="3"></textarea></div>
-                    <div class="field"><button class="ui button" type="submit">Submit</button></div></form>
+                    <button class="ui button" type="submit">Submit</button></form>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
                   <Header as='h4' content='CONTACT INFO' />
