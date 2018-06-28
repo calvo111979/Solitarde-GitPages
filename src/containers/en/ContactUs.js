@@ -189,16 +189,23 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <Form name="info" method="POST" netlify>
-                    <Form.Group widths='equal'>
-                      <Form.Input fluid label='Name' placeholder='Name' />
-                      <Form.Input fluid label='Email' placeholder='Email' />
-                      <Form.Input fluid label='Phone' placeholder='Phone' />
-                    </Form.Group>
-                    <Form.Input fluid label='Subject' placeholder='Subject' />
-                    <Form.TextArea label='About' placeholder='Tell us more' />
-                    <Form.Button content='Submit'>Submit</Form.Button>A
-                  </Form>
+                  <form name="info" method="POST" class="ui form" netlify>
+                    <div class="equal width fields">
+                      <div class="field"><label>Name</label>
+                        <div class="ui fluid input"><input placeholder="Name" type="text" /></div>
+                      </div>
+                      <div class="field"><label>Email</label>
+                        <div class="ui fluid input"><input placeholder="Email" type="text"/></div>
+                      </div>
+                      <div class="field"><label>Phone</label>
+                        <div class="ui fluid input"><input placeholder="Phone" type="text" /></div>
+                      </div>
+                    </div>
+                    <div class="field"><label>Subject</label>
+                      <div class="ui fluid input"><input placeholder="Subject" type="text" /></div>
+                    </div>
+                    <div class="field"><label>About</label><textarea placeholder="Tell us more" rows="3"></textarea></div>
+                    <div class="field"><button class="ui button" type="submit">Submit</button></div></form>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
                   <Header as='h4' content='CONTACT INFO' />
