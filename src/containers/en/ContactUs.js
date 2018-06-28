@@ -34,7 +34,7 @@ export default class extends React.Component {
       <DesktopContainer urlString="contact">
          <Container text textAlign='center'>
            <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
-             CONTÁCTA<span style={{color:"#2185d0"}}>NOS</span>
+             CONTACT <span style={{color:"#2185d0"}}>US</span>
              {/* <Divider style={{color:"#2185d0"}}/> */}
              <hr style={{
                width: "10%",
@@ -42,16 +42,15 @@ export default class extends React.Component {
              }}/>
            </Header>
          </Container>
-         <Container centered>
-           <Grid>
+         <Container centered style={{padding: "1em 3em", paddingBottom: "5em"}}>
+           <Grid style={{paddingBottom: "10em"}}>
              <Grid.Row columns={3}>
                <Grid.Column width={10}>
-                  <div>Contact Us</div>
                   {this.state.submitted ? (
-                    <p>
+                    <Container text style={{paddingBottom: "5em"}}>
                       Thanks for submitting your information! We'll be in contact with you as soon as
                       possible.
-                    </p>
+                    </Container>
                   ) : (
                     <Form
                       onSubmit={async values => {
@@ -69,7 +68,7 @@ export default class extends React.Component {
                       }}
                     >
                       {({ submitForm }) => (
-                        <form name="contact" netlify="true" onSubmit={submitForm}>
+                        <form name="contact" class="ui form" netlify="true" onSubmit={submitForm}>
                           <div class="equal width fields">
                                 <div class="field"><label>Name</label>
                                   <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
@@ -91,8 +90,8 @@ export default class extends React.Component {
                     </Form>
                   )}
                 </Grid.Column>
-                <Grid.Column  style={{ padding: '0em 1em' }} width={6}>
-                      <Header as='h4' content='INFO DE CONTACTO' />
+                <Grid.Column  style={{ padding: '0em 1em'}} width={6}>
+                      <Header as='h4' content='CONTACT INFO' />
                           <Grid.Column style={{ padding: '1em 0em' }}>
                             <Icon name='phone' color='blue' size='big' />
                              +1-864-498-8691
