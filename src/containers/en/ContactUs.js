@@ -19,6 +19,7 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
+import NetlifyForm from 'react-netlify-form'
 
 const encode = data =>
   Object.keys(data)
