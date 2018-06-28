@@ -190,27 +190,26 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <div class="content">
-                  <form name="contact" action="/thank-you" netlify-honeypot="bot-field" method="post" netlify>
+                  <form name="contact" method="POST" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contact" />
-                    <p class="hidden">
-                      <input name="bot-field" hidden />
-                    </p>
-                    <label class="form-label" for="name">
-                      Name:
-                    </label>
-                    <input class="form-field" name="name" id="name" />
-                    <label class="form-label" for="email">
-                      Email:
-                    </label>
-                    <input class="form-field" name="email" id="email" />
-                    <label class="form-label" for="message">
-                      Message:
-                    </label>
-                    <textarea class="form-field" name="message" id="message"></textarea>
-                    <input class="form-button" type="submit" value="Send message" />
+                    <input type="hidden" name="bot-field" />
+                    <div class="equal width fields">
+                      <div class="field"><label>Name</label>
+                        <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
+                      </div>
+                      <div class="field"><label>Email</label>
+                        <div class="ui fluid input"><input placeholder="Email" name="email" type="text" required/></div>
+                      </div>
+                      <div class="field"><label>Phone</label>
+                        <div class="ui fluid input"><input placeholder="Phone" name="phone" type="text" required/></div>
+                      </div>
+                    </div>
+                    <div class="field"><label>Subject</label>
+                      <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
+                    </div>
+                    <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
+                    <button class="ui button" type="submit">Submit</button>
                   </form>
-                </div>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
                   <Header as='h4' content='CONTACT INFO' />
