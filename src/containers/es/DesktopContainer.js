@@ -108,7 +108,7 @@ class TabletContainer extends Component {
               inverted
               // pointing={!fixed}
               secondary={!fixed}
-              size='medium'
+              size='large'
             >
               <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
               {/* <Menu.Item as='a' href={get_en_link()} > <Flag name='us' /></Menu.Item>
@@ -136,7 +136,7 @@ class TabletContainer extends Component {
               // inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
-              size='medium'
+              size='large'
             >
 
               <Container>

@@ -57,25 +57,25 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <form name="contact" method="POST" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <input type="hidden" name="bot-field" />
-                    <div class="equal width fields">
-                      <div class="field"><label>Name</label>
-                        <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
-                      </div>
-                      <div class="field"><label>Email</label>
-                        <div class="ui fluid input"><input placeholder="Email" name="email" type="text" required/></div>
-                      </div>
-                      <div class="field"><label>Phone</label>
-                        <div class="ui fluid input"><input placeholder="Phone" name="phone" type="text" required/></div>
-                      </div>
-                    </div>
-                    <div class="field"><label>Subject</label>
-                      <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
-                    </div>
-                    <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
-                    <button class="ui button" type="submit">Submit</button>
+                  <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                      <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                      </select></label>
+                    </p>
+                    <p>
+                      <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
                   </form>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
