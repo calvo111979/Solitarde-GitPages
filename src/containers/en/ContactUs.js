@@ -19,8 +19,7 @@ import {
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
 import { Form } from 'semantic-ui-react'
-import NetlifyForm from 'react-netlify-form'
-
+import ClientForm from "./Form"
 const MenuAndBody = ({ children, urlString }) => (
   <div>
     <DesktopContainer
@@ -57,16 +56,7 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <NetlifyForm>{formState => (
-                    <div>
-                        { formState.loading && 'Loading...' }
-                        { formState.error && 'Error.' }
-                        { formState.success && 'Success.' }
-                        <input type='text' name='Name' required />
-                        <textarea name='Message' required />
-                        <button>Submit</button>
-                    </div>
-                )}</NetlifyForm>
+                  <ClientForm />
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
                   <Header as='h4' content='CONTACT INFO' />
