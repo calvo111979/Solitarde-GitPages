@@ -53,7 +53,7 @@ class MobileForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <form name="info" method="POST" netlify>
+                  <Form name="info" action="POST" netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -61,8 +61,8 @@ class MobileForm extends Component {
                     </Form.Group>
                     <Form.Input fluid label='Asunto' placeholder='Asunto' />
                     <Form.TextArea label='Mensaje' placeholder='Mensaje' />
-                    <Form.Button>Enviar</Form.Button>
-                  </form>
+                    <Form.Button content='Submit'>Enviar</Form.Button>
+                  </Form>
                 </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
@@ -118,7 +118,7 @@ class TabletForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <form name="info" method="POST" netlify>
+                  <Form name="info" method="POST" netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -126,8 +126,8 @@ class TabletForm extends Component {
                     </Form.Group>
                     <Form.Input fluid label='Asunto' placeholder='Asunto' />
                     <Form.TextArea label='Mensaje' placeholder='Mensaje' />
-                    <Form.Button>Enviar</Form.Button>
-                  </form>
+                    <Form.Button content='Submit'>Enviar</Form.Button>
+                  </Form>
                 </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
@@ -184,7 +184,7 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <form name="info" method="POST" netlify>
+                  <Form name="info" method="POST" netlify>
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Nombre' placeholder='Nombre' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -192,8 +192,8 @@ class DesktopForm extends Component {
                     </Form.Group>
                     <Form.Input fluid label='Asunto' placeholder='Asunto' />
                     <Form.TextArea label='Mensaje' placeholder='Mensaje' />
-                    <Form.Button>Submit</Form.Button>
-                  </form>
+                    <Form.Button content='Submit'>Enviar</Form.Button>
+                  </Form>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} basic width={6}>
                   <Header as='h4' content='INFO DE CONTACTO' />
