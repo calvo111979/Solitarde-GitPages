@@ -190,7 +190,8 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <form name="info" method="POST" class="ui form" netlify="true">
+                  <form name="contact" method="post" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="bot-field" />
                     <div class="equal width fields">
                       <div class="field"><label>Name</label>
                         <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>

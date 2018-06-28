@@ -59,6 +59,10 @@ export default {
             component: 'src/containers/en/AboutUs'
           },
           {
+            path: '/success',
+            component: 'src/containers/en/Success'
+          },
+          {
             path: '/events',
             component: 'src/containers/en/Events',
             getData: () => ({
