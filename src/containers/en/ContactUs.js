@@ -207,7 +207,7 @@ class DesktopForm extends Component {
                     </div>
                     <div class="field"><label>About</label><textarea placeholder="Tell us more" rows="3"></textarea></div>
                     <input type="hidden" name="form-name" value="info" />
-                    <button class="ui button">Submit</button>
+                    <button class="ui button" type="submit">Submit</button>
                   </form>
                   <NetlifyForm>{formState => (
                     <div>
