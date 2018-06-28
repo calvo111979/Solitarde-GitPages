@@ -121,7 +121,7 @@ class TabletForm extends Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column>
-                  <Form name="info" method="POST" netlify>
+                  <Form name="info" method="POST" netlify="true">
                     <Form.Group widths='equal'>
                       <Form.Input fluid label='Name' placeholder='Name' />
                       <Form.Input fluid label='Email' placeholder='Email' />
@@ -129,7 +129,7 @@ class TabletForm extends Component {
                     </Form.Group>
                     <Form.Input fluid label='Subject' placeholder='Subject' />
                     <Form.TextArea label='About' placeholder='Tell us more' />
-                    <Form.Button content='Submit'>Submit</Form.Button>A
+                    <Form.Button>Submit</Form.Button>
                   </Form>
                 </Grid.Column>
                 </Grid.Row>
@@ -206,7 +206,7 @@ class DesktopForm extends Component {
                     </div>
                     <div class="field"><label>About</label><textarea placeholder="Tell us more" rows="3"></textarea></div>
                     <div data-netlify-recaptcha="true"></div>
-                    <input type="hidden" name="info" value="info" />
+                    <input type="hidden" name="form-name" value="info" />
                     <button class="ui button" type="submit">Submit</button>
                   </form>
               </Grid.Column>
