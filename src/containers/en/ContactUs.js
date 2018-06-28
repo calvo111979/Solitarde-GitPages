@@ -57,26 +57,16 @@ class DesktopForm extends Component {
             <Grid divided='vertically'>
               <Grid.Row columns={3}>
                 <Grid.Column width={10}>
-                  <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                      <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                      <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
-                    </p>
-                  </form>
+                  <NetlifyForm>{formState => (
+                    <div>
+                        { formState.loading && 'Loading...' }
+                        { formState.error && 'Error.' }
+                        { formState.success && 'Success.' }
+                        <input type='text' name='Name' required />
+                        <textarea name='Message' required />
+                        <button>Submit</button>
+                    </div>
+                )}</NetlifyForm>
               </Grid.Column>
               <Grid.Column  style={{ padding: '0em 5%' }} width={6}>
                   <Header as='h4' content='CONTACT INFO' />
