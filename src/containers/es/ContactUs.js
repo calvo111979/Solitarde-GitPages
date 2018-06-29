@@ -46,7 +46,7 @@ export default class extends React.Component {
            <Grid style={{paddingBottom: "10em"}}>
              <Grid.Row columns={3}>
                <Grid.Column width={10}>
-                  {this.state.submitted ? (
+                  {/* {this.state.submitted ? (
                     <Container text style={{paddingBottom: "5em"}}>
                       ¡Gracias por enviar tu información! Estaremos en contacto con usted tan pronto como
                        posible.
@@ -89,7 +89,7 @@ export default class extends React.Component {
                         </form>
                       )}
                     </Form>
-                  )}
+                  )} */}
                 </Grid.Column>
                 <Grid.Column  style={{ padding: '0em 1em'}} width={6}>
                       <Header as='h4' content='INFO DE CONTACTO' />

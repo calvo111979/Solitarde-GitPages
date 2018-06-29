@@ -47,13 +47,7 @@ export default class extends React.Component {
            <Grid style={{paddingBottom: "10em"}}>
              <Grid.Row columns={3}>
                <Grid.Column width={10}>
-                  {this.state.submitted ? (
-                    <Container text style={{paddingBottom: "5em"}}>
-                      Thanks for submitting your information! We'll be in contact with you as soon as
-                      possible.
-                    </Container>
-                  ) : (
-                    <NetlifyForm>{formState => (
+                    {<NetlifyForm>{formState => (
                         <div>
                             { formState.loading && 'Loading...' }
                             { formState.error && 'Error.' }
@@ -63,7 +57,7 @@ export default class extends React.Component {
                             <button>Submit</button>
                         </div>
                     )}</NetlifyForm>
-                  )}
+                  }
                 </Grid.Column>
                 <Grid.Column  style={{ padding: '0em 1em'}} width={6}>
                       <Header as='h4' content='CONTACT INFO' />
