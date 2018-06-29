@@ -48,7 +48,6 @@ export default class extends React.Component {
           ...this.state
         })
       })
-        .then(() => navigateTo(form.getAttribute("action")))
         .catch(error => alert(error));
     };
 
@@ -77,6 +76,7 @@ export default class extends React.Component {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
+                    class="ui form"
                   >
                      <input type="hidden" name="form-name" value="contact" />
                      <p hidden>
