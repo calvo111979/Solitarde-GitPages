@@ -72,7 +72,7 @@ export default class extends React.Component {
                  <form
                     name="contact"
                     method="post"
-                    action="/thanks/"
+                    action="/success"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
@@ -99,7 +99,7 @@ export default class extends React.Component {
                          <div class="field"><label>Subject</label>
                            <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Subject" name="subject" type="text" required/></div>
                          </div>
-                         <div class="field"><label>About</label><textarea onChange={this.handleChange} placeholder="Tell us more" name="info" rows="3" required></textarea></div>
+                         <div class="field"><label>About</label><textarea onChange={this.handleChange} placeholder="Tell us more" name="message" rows="3" required></textarea></div>
                          <button class="ui button" type="submit">Submit</button>
                        </form>
                </Grid.Column>
