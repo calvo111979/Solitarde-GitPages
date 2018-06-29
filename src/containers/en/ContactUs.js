@@ -31,77 +31,86 @@ export default class extends React.Component {
   }
   render () {
     return (
-      <div>
-        <div className="header">Contact Us</div>
-       {this.state.submitted ? (
-         <p className="thanks">
-           Thanks for submitting your information! We'll be in contact with you as soon as
-           possible.
-         </p>
-       ) : (
-         <Form
-           onSubmit={async values => {
-             try {
-               await axios.post('/', encode({ 'form-name': 'contact', ...values }), {
-                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-               })
-               this.setState({ submitted: true })
-             } catch (err) {
-               window.alert(
-                 'There was a problem submitting your form! Try again or reload the page :)',
-               )
-               this.setState({ submitted: true })
-             }
-           }}
-         >
-           {({ submitForm }) => (
-             <form name="contact" netlify="true" onSubmit={submitForm}>
-               <div>
-                 <div>Name</div>
-                 <Text field="name" name="name" placeholder="John Doe" />
-               </div>
-               <div>
-                 <div>Email</div>
-                 <Text field="email" name="email" placeholder="johndoe@gmail.com" />
-               </div>
-               <div>
-                 <div>Phone</div>
-                 <Text field="phone" name="phone" placeholder="(555) 555-555" />
-               </div>
-               <div>
-                 <div>Message</div>
-                 <TextArea
-                   field="message"
-                   name="message"
-                   rows="5"
-                   placeholder="Your message to us :)"
-                 />
-               </div>
-               <div>
-                 <button type="submit">Submit</button>
-               </div>
-             </form>
-           )}
-         </Form>
-       )}
-       <div className="columns">
-         <div className="column">
-           Or give us a call for more information about our building and services. We are happy to
-           assist you in planning your upcoming event.
-         </div>
-         <div className="column">
-           <div>City View Receptions</div>
-           <div>1001 East 11th Avenue, Suite B</div>
-           <div>Salt Lake City, UT 84103</div>
-           <a href="tel:+8012901267" className="phone">
-             (801) 290 - 1267
-           </a>
-         </div>
-       </div>
-       <div className="copyright">
-         Copyright &copy; {new Date().getYear() + 1900} City View Receptions
-       </div>
-     </div>
+      <DesktopContainer urlString="contact">
+         <Container text textAlign='center'>
+           <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
+             CONTACT <span style={{color:"#2185d0"}}>US</span>
+             {/* <Divider style={{color:"#2185d0"}}/> */}
+             <hr style={{
+               width: "10%",
+               border: "1px solid #2185d0",
+             }}/>
+           </Header>
+         </Container>
+         <Container centered style={{padding: "1em 3em", paddingBottom: "5em"}}>
+           <Grid style={{paddingBottom: "10em"}}>
+             <Grid.Row columns={3}>
+               <Grid.Column width={10}>
+                  {this.state.submitted ? (
+                    <Container text style={{paddingBottom: "5em"}}>
+                      Thanks for submitting your information! We'll be in contact with you as soon as
+                      possible.
+                    </Container>
+                  ) : (
+                    <Form
+                      onSubmit={async values => {
+                        try {
+                          await axios.post('/', encode({ 'form-name': 'encontact', ...values }), {
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                          })
+                          this.setState({ submitted: true })
+                        } catch (err) {
+                          window.alert(
+                            'There was a problem submitting your form! Try again or reload the page :)',
+                          )
+                          this.setState({ submitted: true })
+                        }
+                      }}
+                    >
+                      {({ submitForm }) => (
+                        <form name="encontact" class="ui form" netlify="true" onSubmit={submitForm}>
+                          <div class="equal width fields">
+                                <div class="field"><label>Name</label>
+                                  <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
+                                </div>
+                                <div class="field"><label>Email</label>
+                                  <div class="ui fluid input"><input placeholder="Email" name="email" type="text" required/></div>
+                                </div>
+                                <div class="field"><label>Phone</label>
+                                  <div class="ui fluid input"><input placeholder="Phone" name="phone" type="text" required/></div>
+                                </div>
+                              </div>
+                              <div class="field"><label>Subject</label>
+                                <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
+                              </div>
+                              <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
+                               <div netlify-recaptcha></div>
+                              <button class="ui button" type="submit">Submit</button>
+                        </form>
+                      )}
+                    </Form>
+                  )}
+                </Grid.Column>
+                <Grid.Column  style={{ padding: '0em 1em'}} width={6}>
+                      <Header as='h4' content='CONTACT INFO' />
+                          <Grid.Column style={{ padding: '1em 0em' }}>
+                            <Icon name='phone' color='blue' size='big' />
+                             +1-864-498-8691
+                          </Grid.Column>
+                          <Grid.Column style={{ padding: '1em 0em' }}>
+                            <Icon name='mail' color='blue' size='big'/>
+                             info@solitrade.com
+                          </Grid.Column>
+                          <Grid.Column style={{ padding: '1em 0em' }}>
+                            <Icon name='point' color='blue' size='big'/>
+                             CHARLOTTE, SC 28203 (USA)
+                          </Grid.Column>
+                  </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Container>
+        <Footer />
+      </DesktopContainer>
     )
   }
 }
