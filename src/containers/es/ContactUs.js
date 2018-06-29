@@ -70,7 +70,7 @@ export default class extends React.Component {
             <Grid.Row columns={3}>
               <Grid.Column width={10}>
                  <form
-                    name="spanish_contact"
+                    name="contact"
                     method="post"
                     action="/success"
                     data-netlify="true"
@@ -78,7 +78,7 @@ export default class extends React.Component {
                     onSubmit={this.handleSubmit}
                     class="ui form"
                   >
-                     <input type="hidden" name="form-name" value="spanish_contact" />
+                     <input type="hidden" name="form-name" value="contact" />
                      <p hidden>
                        <label>
                          Don’t fill this out:{" "}
