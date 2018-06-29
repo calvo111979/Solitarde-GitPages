@@ -19,7 +19,6 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-import NetlifyForm from 'react-netlify-form'
 
 const encode = data =>
   Object.keys(data)
@@ -47,17 +46,50 @@ export default class extends React.Component {
            <Grid style={{paddingBottom: "10em"}}>
              <Grid.Row columns={3}>
                <Grid.Column width={10}>
-                    {<NetlifyForm>{formState => (
-                        <div>
-                            { formState.loading && 'Loading...' }
-                            { formState.error && 'Error.' }
-                            { formState.success && 'Success.' }
-                            <input type='text' name='Name' required />
-                            <textarea name='Message' required />
-                            <button>Submit</button>
-                        </div>
-                    )}</NetlifyForm>
-                  }
+                  {this.state.submitted ? (
+                    <Container text style={{paddingBottom: "5em"}}>
+                      Thanks for submitting your information! We'll be in contact with you as soon as
+                      possible.
+                    </Container>
+                  ) : (
+                    <Form
+                      onSubmit={async values => {
+                        try {
+                          await axios.post('/', encode({ 'form-name': 'contact', ...values }), {
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                          })
+                          this.setState({ submitted: true })
+                        } catch (err) {
+                          window.alert(
+                            'There was a problem submitting your form! Try again or reload the page :)',
+                          )
+                          this.setState({ submitted: true })
+                        }
+                      }}
+                    >
+                      {({ submitForm }) => (
+                        <form name="contact-info" class="ui form" netlify="true" onSubmit={submitForm}>
+                          <div class="equal width fields">
+                                <div class="field"><label>Name</label>
+                                  <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
+                                </div>
+                                <div class="field"><label>Email</label>
+                                  <div class="ui fluid input"><input placeholder="Email" name="email" type="text" required/></div>
+                                </div>
+                                <div class="field"><label>Phone</label>
+                                  <div class="ui fluid input"><input placeholder="Phone" name="phone" type="text" required/></div>
+                                </div>
+                              </div>
+                              <div class="field"><label>Subject</label>
+                                <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
+                              </div>
+                              <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
+                               <div netlify-recaptcha></div>
+                              <button class="ui button" type="submit">Submit</button>
+                        </form>
+                      )}
+                    </Form>
+                  )}
                 </Grid.Column>
                 <Grid.Column  style={{ padding: '0em 1em'}} width={6}>
                       <Header as='h4' content='CONTACT INFO' />
