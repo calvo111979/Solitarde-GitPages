@@ -70,6 +70,7 @@ export default class extends React.Component {
                    >
                      {({ submitForm }) => (
                        <form name="contact" netlify="true" onSubmit={submitForm}>
+                         <input type="hidden" name="form-name" value="contact" />
                          <div class="equal width fields">
                                <div class="field"><label>Name</label>
                                  <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
@@ -110,7 +111,7 @@ export default class extends React.Component {
            </Grid>
          </Container>
        <Footer />
-     </DesktopContainer> 
+     </DesktopContainer>
     )
   }
 }
