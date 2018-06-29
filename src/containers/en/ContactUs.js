@@ -55,7 +55,7 @@ export default class extends React.Component {
                     <Form
                       onSubmit={async values => {
                         try {
-                          await axios.post('/', encode({ 'form-name': 'contact-info', ...values }), {
+                          await axios.post('/', encode({ 'form-name': 'contacten', ...values }), {
                             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                           })
                           this.setState({ submitted: true })
@@ -68,23 +68,22 @@ export default class extends React.Component {
                       }}
                     >
                       {({ submitForm }) => (
-                        <form name="contact-info" class="ui form" netlify="true" onSubmit={submitForm}>
+                        <form name="contacten" class="ui form" netlify="true" onSubmit={submitForm}>
                           <div class="equal width fields">
                                 <div class="field"><label>Name</label>
-                                  <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
+                                  <div class="ui fluid input"><Text placeholder="Name" name="name" field="name" required/></div>
                                 </div>
                                 <div class="field"><label>Email</label>
-                                  <div class="ui fluid input"><input placeholder="Email" name="email" type="text" required/></div>
+                                  <div class="ui fluid input"><Text placeholder="Email" name="email" field="email" required/></div>
                                 </div>
                                 <div class="field"><label>Phone</label>
-                                  <div class="ui fluid input"><input placeholder="Phone" name="phone" type="text" required/></div>
+                                  <div class="ui fluid input"><Text placeholder="Phone" name="phone" field="phone" required/></div>
                                 </div>
                               </div>
                               <div class="field"><label>Subject</label>
-                                <div class="ui fluid input"><input placeholder="Subject" name="subject" type="text" required/></div>
+                                <div class="ui fluid input"><Text placeholder="Subject" name="subject" field="Subject" required/></div>
                               </div>
-                              <div class="field"><label>About</label><textarea placeholder="Tell us more" name="info" rows="3" required></textarea></div>
-                               <div netlify-recaptcha></div>
+                              <div class="field"><label>About</label><TextArea field="message" name="message" placeholder="Your Message" rows="3" required />></div>
                               <button class="ui button" type="submit">Submit</button>
                         </form>
                       )}
