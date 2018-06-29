@@ -55,7 +55,7 @@ export default class extends React.Component {
                     <Form
                       onSubmit={async values => {
                         try {
-                          await axios.post('/', encode({ 'form-name': 'encontact', ...values }), {
+                          await axios.post('/', encode({ 'form-name': 'contact', ...values }), {
                             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                           })
                           this.setState({ submitted: true })
@@ -68,7 +68,7 @@ export default class extends React.Component {
                       }}
                     >
                       {({ submitForm }) => (
-                        <form name="encontact" class="ui form" netlify="true" onSubmit={submitForm}>
+                        <form name="contact" class="ui form" netlify="true" onSubmit={submitForm}>
                           <div class="equal width fields">
                                 <div class="field"><label>Name</label>
                                   <div class="ui fluid input"><input placeholder="Name" name="name" type="text" required/></div>
