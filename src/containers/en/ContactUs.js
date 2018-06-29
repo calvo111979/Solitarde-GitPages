@@ -63,28 +63,36 @@ export default class extends React.Component {
                           window.alert(
                             'There was a problem submitting your form! Try again or reload the page :)',
                           )
-                          this.setState({ submitted: true })
+                          this.setState({ submitted: false })
                         }
                       }}
                     >
                       {({ submitForm }) => (
-                        <form name="contacten" class="ui form" netlify="true" onSubmit={submitForm}>
-                          <div class="equal width fields">
-                                <div class="field"><label>Name</label>
-                                  <div class="ui fluid input"><Text placeholder="Name" name="name" field="name" required/></div>
-                                </div>
-                                <div class="field"><label>Email</label>
-                                  <div class="ui fluid input"><Text placeholder="Email" name="email" field="email" required/></div>
-                                </div>
-                                <div class="field"><label>Phone</label>
-                                  <div class="ui fluid input"><Text placeholder="Phone" name="phone" field="phone" required/></div>
-                                </div>
-                              </div>
-                              <div class="field"><label>Subject</label>
-                                <div class="ui fluid input"><Text placeholder="Subject" name="subject" field="Subject" required/></div>
-                              </div>
-                              <div class="field"><label>About</label><TextArea field="message" name="message" placeholder="Your Message" rows="3" required />></div>
-                              <button class="ui button" type="submit">Submit</button>
+                        <form name="contacten" netlify="true" onSubmit={submitForm}>
+                          <div>
+                            <div>Name</div>
+                            <Text field="name" name="name" placeholder="John Doe" />
+                          </div>
+                          <div>
+                            <div>Email</div>
+                            <Text field="email" name="email" placeholder="johndoe@gmail.com" />
+                          </div>
+                          <div>
+                            <div>Phone</div>
+                            <Text field="phone" name="phone" placeholder="(555) 555-555" />
+                          </div>
+                          <div>
+                            <div>Message</div>
+                            <TextArea
+                              field="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Your message to us :)"
+                            />
+                          </div>
+                          <div>
+                            <button type="submit">Submit</button>
+                          </div>
                         </form>
                       )}
                     </Form>
