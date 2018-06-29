@@ -48,6 +48,7 @@ export default class extends React.Component {
           ...this.state
         })
       })
+        .then(() => history.push('/success'))
         .catch(error => alert(error));
     };
 
@@ -56,7 +57,7 @@ export default class extends React.Component {
       <DesktopContainer urlString="contact">
         <Container text textAlign='center'>
           <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
-            CONTÁCTA<span style={{color:"#2185d0"}}>NOS</span>
+            CONTACT <span style={{color:"#2185d0"}}>US</span>
             {/* <Divider style={{color:"#2185d0"}}/> */}
             <hr style={{
               width: "10%",
@@ -65,10 +66,9 @@ export default class extends React.Component {
           </Header>
         </Container>
         <Container centered>
-          <Grid>
+          <Grid style={{paddingBottom: "10em"}}>
             <Grid.Row columns={3}>
               <Grid.Column width={10}>
-                 <div>Contact Us</div>
                  <form
                     name="contact"
                     method="post"
