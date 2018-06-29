@@ -55,7 +55,7 @@ export default class extends React.Component {
                     <Form
                       onSubmit={async values => {
                         try {
-                          await axios.post('/', encode({ 'form-name': 'contact', ...values }), {
+                          await axios.post('/', encode({ 'form-name': 'contact-info', ...values }), {
                             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                           })
                           this.setState({ submitted: true })

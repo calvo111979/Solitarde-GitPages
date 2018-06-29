@@ -46,7 +46,7 @@ export default class extends React.Component {
            <Grid style={{paddingBottom: "10em"}}>
              <Grid.Row columns={3}>
                <Grid.Column width={10}>
-                  {/* {this.state.submitted ? (
+                  {this.state.submitted ? (
                     <Container text style={{paddingBottom: "5em"}}>
                       ¡Gracias por enviar tu información! Estaremos en contacto con usted tan pronto como
                        posible.
@@ -55,7 +55,7 @@ export default class extends React.Component {
                     <Form
                       onSubmit={async values => {
                         try {
-                          await axios.post('/', encode({ 'form-name': 'contact', ...values }), {
+                          await axios.post('/', encode({ 'form-name': 'contact-info-spanish', ...values }), {
                             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                           })
                           this.setState({ submitted: true })
@@ -68,7 +68,7 @@ export default class extends React.Component {
                       }}
                     >
                       {({ submitForm }) => (
-                        <form name="contact_es" class="ui form" netlify="true" onSubmit={submitForm}>
+                        <form name="contact-info-spanish" class="ui form" netlify="true" onSubmit={submitForm}>
                           <div class="equal width fields">
                                 <div class="field"><label>Name</label>
                                   <div class="ui fluid input"><input placeholder="Nombre" name="name" type="text" required/></div>
@@ -89,7 +89,7 @@ export default class extends React.Component {
                         </form>
                       )}
                     </Form>
-                  )} */}
+                  )}
                 </Grid.Column>
                 <Grid.Column  style={{ padding: '0em 1em'}} width={6}>
                       <Header as='h4' content='INFO DE CONTACTO' />
