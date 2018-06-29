@@ -48,7 +48,7 @@ export default class extends React.Component {
           ...this.state
         })
       })
-        .then(() => history.push('/success'))
+        .then(() => this.props.history.push('/success'))
         .catch(error => alert(error));
     };
 
@@ -104,7 +104,7 @@ export default class extends React.Component {
                        </form>
                </Grid.Column>
                <Grid.Column  style={{ padding: '0em 1em' }} width={6}>
-                     <Header as='h4' content='INFO DE CONTACTO' />
+                     <Header as='h4' content='CONTACT INFO' />
                          <Grid.Column style={{ padding: '1em 0em' }}>
                            <Icon name='phone' color='blue' size='big' />
                             +1-864-498-8691

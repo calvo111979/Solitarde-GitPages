@@ -37,7 +37,7 @@ const PageLayout = () => (
     urlString="about">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
-        THANKS FOR CONTACTING <span style={{color:"#2185d0"}}>US</span>
+        GRACIAS POR CONTACTAR<span style={{color:"#2185d0"}}>NOS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
           width: "10%",
@@ -46,8 +46,8 @@ const PageLayout = () => (
       </Header>
     </Container>
     <Container as="h3" text textAlign="center" style={{ fontSize: "2em", paddingBottom: "15em"}}>
-      Thanks for contacting us! We'll reach you as soon as
-      possible.
+      ¡Gracias por contactarnos! Te contactaremos tan pronto como sea
+       posible.
     </Container>
     <Footer />
   </ResponsiveContainer>
