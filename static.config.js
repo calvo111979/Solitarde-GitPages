@@ -36,6 +36,7 @@ export default {
   }),
   getRoutes: async () => {
     const { data: events } = await axios.get('https://sales.solitrade.com/json')
+    const { data: brochures } = await axios.get('https://sales.solitrade.com/brochures_json')
     // console.log(events)
     return [
       {
@@ -78,6 +79,13 @@ export default {
               }),
             })),
           },
+          {
+            path: '/brochures',
+            component: 'src/containers/en/Brochures',
+            getData: () => ({
+              brochures,
+            }),
+          },
         ]
       },
       {
@@ -115,6 +123,13 @@ export default {
                 event,
               }),
             })),
+          },
+          {
+            path: '/brochures',
+            component: 'src/containers/es/Brochures',
+            getData: () => ({
+              brochures,
+            }),
           },
         ]
       },

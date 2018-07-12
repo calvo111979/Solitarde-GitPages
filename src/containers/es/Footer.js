@@ -39,6 +39,7 @@ class TabletFooter extends Component {
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/productos">Productos</List.Item>
+                      <List.Item as='a' href="/es/brochures">Folletos</List.Item>
                       <List.Item as='a' href="/es/comunidad">Nuestra Comunidad</List.Item>
                       <List.Item as='a' href="/es/contacto">Contacto</List.Item>
                     </List>
@@ -76,7 +77,6 @@ class TabletFooter extends Component {
             <Container textAlign='center'>
               Copyright © 2018 Solitrade Group. All Rights Reserved.
             </Container>
-
           </Segment>
         </Responsive>
       )
@@ -105,6 +105,7 @@ class Footer extends Component {
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/productos">Productos</List.Item>
+                      <List.Item as='a' href="/es/brochures">Folletos</List.Item>
                       <List.Item as='a' href="/es/comunidad">Nuestra Comunidad</List.Item>
                       <List.Item as='a' href="/es/contacto">Contacto</List.Item>
                     </List>
@@ -171,6 +172,7 @@ class MobileFooter extends Component {
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/productos">Productos</List.Item>
+                      <List.Item as='a' href="/es/brochures">Folletos</List.Item>
                       <List.Item as='a' href="/es/comunidad">Nuestra Comunidad</List.Item>
                       <List.Item as='a' href="/es/contacto">Contacto</List.Item>
                     </List>

@@ -150,6 +150,7 @@ class TabletContainer extends Component {
                 <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                 <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                 <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
+                <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
                 <Dropdown text='COMUNIDAD' pointing className='link item'>
                   <Dropdown.Menu>
                     <Dropdown.Item href='/es/community'>NOSOTROS</Dropdown.Item>
@@ -157,9 +158,6 @@ class TabletContainer extends Component {
                   </Dropdown.Menu>
                 </Dropdown>
                 <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
-
-
-
               </Container>
             </Menu>
           </Segment>
@@ -250,6 +248,7 @@ class DesktopContainer extends Component {
                 <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                 <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                 <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
+                <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
                 <Dropdown text='COMUNIDAD' pointing className='link item'>
                   <Dropdown.Menu>
                     <Dropdown.Item href='/es/community'>NOSOTROS</Dropdown.Item>
@@ -305,6 +304,7 @@ class MobileContainer extends Component {
             <Menu.Item as='a' href='/es/'>INICIO</Menu.Item>
             <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
             <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
+            <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
             <Menu.Item as='a' href='/es/community'>NOSOTROS</Menu.Item>
             <Menu.Item as='a' href='/es/events'>EVENTOS</Menu.Item>
             <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
