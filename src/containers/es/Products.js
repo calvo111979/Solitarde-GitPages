@@ -56,9 +56,10 @@ const PageLayout = () => (
       stackable
       divided='vertically'
       style={{ padding: '0% 0%' }}
+      columns="3"
      >
       <Grid.Row>
-        <Grid.Column width={5}>
+        <Grid.Column>
           <Image src={Insulation} centered size='large'/>
           <Segment basic >
               <Header as='h3'>AISLAMIENTO TÉRMICO Y ACÚSTICO</Header>
@@ -82,7 +83,7 @@ const PageLayout = () => (
                 </Grid>
           </Segment>
         </Grid.Column>
-          <Grid.Column width={5}>
+          <Grid.Column>
             <Image src={Other} centered size='large'/>
             <Segment basic >
             <Header as='h3'>RECUBRIMIENTOS A PRUEBA DE AGUA</Header>
@@ -106,7 +107,7 @@ const PageLayout = () => (
               </Grid.Row>
             </Grid>
           </Grid.Column>
-          <Grid.Column width={5}>
+          <Grid.Column>
             <Image src={Glass} centered size='large'/>
             <Segment basic >
             <Header as='h3'>VIDRIO Y OTROS MATERIALES</Header>
