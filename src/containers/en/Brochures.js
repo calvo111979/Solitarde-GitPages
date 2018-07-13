@@ -31,7 +31,10 @@ function format_brochures(brochures){
     brochures.map((brochure) =>{
       if (brochure.name != name) {
         name = brochure.name
-        return <div><List.Item key={brochure.id + "title"} as="h2" >{brochure.name}</List.Item><br /> <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item></div>
+        return [
+          <List.Item key={brochure.id + "title"} as="h2" >{brochure.name}</List.Item>,
+          <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
+        ];
       }
       return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
     }

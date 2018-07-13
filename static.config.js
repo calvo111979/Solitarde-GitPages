@@ -36,7 +36,7 @@ export default {
   }),
   getRoutes: async () => {
     const { data: events } = await axios.get('https://sales.solitrade.com/json')
-    const { data: brochures } = await axios.get('https://sales.solitrade.com/brochures_json')
+    const { data: brochures } = await axios.get('http://localhost:4000/brochures_json')
     // console.log(events)
     return [
       {
