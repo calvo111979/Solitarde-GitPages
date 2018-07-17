@@ -13,6 +13,7 @@ export default {
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US" prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#'>
       <Head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta charSet="UTF-8" />
         <meta property='og:title' content='Solitrade Group' />
         <meta property='og:type' content='website' />
