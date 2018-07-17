@@ -29,14 +29,17 @@ function format_brochures(brochures){
   var name = ""
   const formatted_brochures =
     brochures.map((brochure) =>{
-      if (brochure.name != name) {
-        name = brochure.name
-        return [
-          <List.Item key={brochure.id + "title"} as="h2" >{brochure.name}</List.Item>,
-          <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
-        ];
+      if (brochure.name == "Garland"){
+        if (brochure.name != name) {
+          name = brochure.name
+          return [
+            <List.Item key={brochure.id + "title"} as="h2" >{brochure.name}</List.Item>,
+            <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
+          ];
+        }
+        return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
       }
-      return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
+      return ""
     }
   )
 
@@ -53,10 +56,10 @@ const ResponsiveContainer = ({ children, urlString }) => (
 
 export default withRouteData(({ brochures }) => (
   <ResponsiveContainer
-    urlString="brochures">
+    urlString="brochures/Garland">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
-        OUR <span style={{color:"#2185d0"}}>BROCHURES</span>
+        NUESTROS <span style={{color:"#2185d0"}}>FOLLETOS</span>
         <hr style={{
           width: "10%",
           border: "1px solid #2185d0",

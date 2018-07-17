@@ -68,7 +68,6 @@ export default {
             component: 'src/containers/en/Events',
             getData: () => ({
               events,
-
             }),
             children: events.events.map(event => ({
               path: `/${event.name.replace(/\s+/g, '-').toLowerCase()}`,
@@ -80,8 +79,29 @@ export default {
             })),
           },
           {
-            path: '/brochures',
-            component: 'src/containers/en/Brochures',
+            path: '/brochures/Garland',
+            component: 'src/containers/en/Garland',
+            getData: () => ({
+              brochures,
+            }),
+          },
+          {
+            path: '/brochures/Knauf',
+            component: 'src/containers/en/Knauf',
+            getData: () => ({
+              brochures,
+            }),
+          },
+          {
+            path: '/brochures/Silvercote',
+            component: 'src/containers/en/Silvercote',
+            getData: () => ({
+              brochures,
+            }),
+          },
+          {
+            path: '/brochures/InsuDry',
+            component: 'src/containers/en/InsuDry',
             getData: () => ({
               brochures,
             }),
@@ -113,7 +133,6 @@ export default {
             component: 'src/containers/es/Events',
             getData: () => ({
               events,
-
             }),
             children: events.events.map(event => ({
               path: `/${event.name.replace(/\s+/g, '-').toLowerCase()}`,
@@ -125,8 +144,29 @@ export default {
             })),
           },
           {
-            path: '/brochures',
-            component: 'src/containers/es/Brochures',
+            path: '/brochures/Garland',
+            component: 'src/containers/es/Garland',
+            getData: () => ({
+              brochures,
+            }),
+          },
+          {
+            path: '/brochures/Knauf',
+            component: 'src/containers/es/Knauf',
+            getData: () => ({
+              brochures,
+            }),
+          },
+          {
+            path: '/brochures/Silvercote',
+            component: 'src/containers/es/Silvercote',
+            getData: () => ({
+              brochures,
+            }),
+          },
+          {
+            path: '/brochures/InsuDry',
+            component: 'src/containers/es/InsuDry',
             getData: () => ({
               brochures,
             }),
