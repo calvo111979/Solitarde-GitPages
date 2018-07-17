@@ -29,7 +29,7 @@ function format_brochures(brochures){
   var name = ""
   const formatted_brochures =
   brochures.map((brochure) =>{
-    if (brochure.name == "InsuDry"){
+    if (brochure.name == "insudry"){
       if (brochure.name != name) {
         name = brochure.name
         return [

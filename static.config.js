@@ -80,28 +80,28 @@ export default {
             })),
           },
           {
-            path: '/brochures/Garland',
+            path: '/brochures/garland',
             component: 'src/containers/en/Garland',
             getData: () => ({
               brochures,
             }),
           },
           {
-            path: '/brochures/Knauf',
+            path: '/brochures/knauf',
             component: 'src/containers/en/Knauf',
             getData: () => ({
               brochures,
             }),
           },
           {
-            path: '/brochures/Silvercote',
+            path: '/brochures/silvercote',
             component: 'src/containers/en/Silvercote',
             getData: () => ({
               brochures,
             }),
           },
           {
-            path: '/brochures/InsuDry',
+            path: '/brochures/insudry',
             component: 'src/containers/en/InsuDry',
             getData: () => ({
               brochures,
@@ -145,28 +145,28 @@ export default {
             })),
           },
           {
-            path: '/brochures/Garland',
+            path: '/brochures/garland',
             component: 'src/containers/es/Garland',
             getData: () => ({
               brochures,
             }),
           },
           {
-            path: '/brochures/Knauf',
+            path: '/brochures/knauf',
             component: 'src/containers/es/Knauf',
             getData: () => ({
               brochures,
             }),
           },
           {
-            path: '/brochures/Silvercote',
+            path: '/brochures/silvercote',
             component: 'src/containers/es/Silvercote',
             getData: () => ({
               brochures,
             }),
           },
           {
-            path: '/brochures/InsuDry',
+            path: '/brochures/insudry',
             component: 'src/containers/es/InsuDry',
             getData: () => ({
               brochures,
