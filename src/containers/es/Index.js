@@ -410,65 +410,63 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-      <Container text textAlign='center'>
-        <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
-          NUESTROS <span style={{color:"#2185d0"}}>SERVICIOS</span>
-          <hr style={{
-            width: "10%",
-            border: "1px solid #2185d0",
-          }}/>
-        </Header>
-      </Container>
+    <Container text textAlign='center'>
+      <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
+        NUESTROS <span style={{color:"#2185d0"}}>SERVICIOS</span>
+        <hr style={{
+          width: "10%",
+          border: "1px solid #2185d0",
+        }}/>
+      </Header>
+    </Container>
     <Segment style={{ padding: '0em 0em' }} basic>
       <Grid container stackable >
         <Grid.Row>
           <Grid.Column width={8}>
-              <Image src={CostumerService} size='medium' floated='left' />
-              <Header as='h3'>VENTAS Y MERCADOTECNIA INTERNACIONAL</Header>
-              <Container>
-                <hr style={{
-                  width: "40%",
-                  border: "1px solid #2185d0",
-                }}/>
-              </Container>
-              <Header as='h4'>Red global de clientes y proveedores.</Header>
-          </Grid.Column>
-
-            <Grid.Column width={8}>
-              <Image src={GlogalLogistics} size='medium' floated='left'/>
-              <Header as='h3'>EXPERIENCIA EN LOGÍSTICA GLOBAL</Header>
-              <hr style={{
-                width: "40%",
-                border: "1px solid #2185d0",
-              }}/>
-              <Header as='h4'>Entregas eficientes fiables y seguras.</Header>
-          </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-
-          <Grid.Column width={8}>
-              <Image src={InternationalSales} size='medium' floated='left'/>
-              <Header as='h3'>EXCELENTE SERVICIO AL CLIENTE</Header>
-              <hr style={{
-                width: "40%",
-                border: "1px solid #2185d0",
-                padding: "0em 0em"
-              }}/>
-              <Header as='h4'>Nos centramos en la total confianza y satisfacción de nuestros clientes</Header>
+            <Image src={GlogalLogistics} size='medium' floated='left'/>
+            <Header as='h3'>VENTAS Y MERCADOTECNIA INTERNACIONAL</Header>
+            <hr style={{
+              width: "40%",
+              border: "1px solid #2185d0",
+            }}/>
+            <Header as='h4'>Red global de clientes y proveedores.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-              <Image src={Valuation} size='medium' floated='left'/>
-              <Header as='h3'>VALUACIÓN DE MERCADOS EXTRANJEROS</Header>
+            <Image src={Valuation} size='medium' floated='left'/>
+            <Header as='h3'>VALUACIÓN DE MERCADOS EXTRANJEROS</Header>
+            <hr style={{
+              width: "40%",
+              border: "1px solid #2185d0",
+            }}/>
+            <Header as='h4'>Posicionamiento de productos en el mercado correcto para el éxito.</Header>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={8}>
+            <Image src={CostumerService} size='medium' floated='left' />
+            <Header as='h3'>EXPERIENCIA EN LOGÍSTICA GLOBAL</Header>
+            <Container style={{padding:"0em "}}>
               <hr style={{
                 width: "40%",
                 border: "1px solid #2185d0",
+                right: "1000px"
               }}/>
-              <Header as='h4'>Posicionamiento de productos en el mercado correcto para el éxito.</Header>
+            </Container>
+            <Header as='h4'>Entregas eficientes fiables y seguras.</Header>
+          </Grid.Column>
+          <Grid.Column width={8}>
+            <Image src={InternationalSales} size='medium' floated='left'/>
+            <Header as='h3'>EXCELENTE SERVICIO AL CLIENTE</Header>
+            <hr style={{
+              width: "40%",
+              border: "1px solid #2185d0",
+              padding: "0em 0em"
+            }}/>
+            <Header as='h4'>Nos centramos en la total confianza y satisfacción de nuestros clientes</Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
-
 
     <Segment style={{ padding: '8em 0em', backgroundColor:'#666666'}} vertical>
       <Container text textAlign='center'>

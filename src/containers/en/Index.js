@@ -424,53 +424,50 @@ const HomepageLayout = () => (
       <Grid container stackable >
         <Grid.Row>
           <Grid.Column width={8}>
-              <Image src={CostumerService} size='medium' floated='left' />
-              <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
-              <Container style={{padding:"0em "}}>
-                <hr style={{
-                  width: "40%",
-                  border: "1px solid #2185d0",
-                  right: "1000px"
-                }}/>
-              </Container>
-              <Header as='h4'>Efficient, secure and reliable delveries.</Header>
-          </Grid.Column>
-
-            <Grid.Column width={8}>
-              <Image src={GlogalLogistics} size='medium' floated='left'/>
-              <Header as='h3'>INTERNATIONAL SALES AND MARKETING</Header>
-              <hr style={{
-                width: "40%",
-                border: "1px solid #2185d0",
-              }}/>
-              <Header as='h4'>Global network of customers and suppliers.</Header>
-          </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-
-          <Grid.Column width={8}>
-              <Image src={InternationalSales} size='medium' floated='left'/>
-              <Header as='h3'>OUTSTANDING CUSTOMER SERVICE</Header>
-              <hr style={{
-                width: "40%",
-                border: "1px solid #2185d0",
-                padding: "0em 0em"
-              }}/>
-              <Header as='h4'>We focus on our clients complete trust and satisfaction.</Header>
+            <Image src={GlogalLogistics} size='medium' floated='left'/>
+            <Header as='h3'>INTERNATIONAL SALES AND MARKETING</Header>
+            <hr style={{
+              width: "40%",
+              border: "1px solid #2185d0",
+            }}/>
+            <Header as='h4'>Global network of customers and suppliers.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-              <Image src={Valuation} size='medium' floated='left'/>
-              <Header as='h3'>FOREIGN MARKET VALUATION</Header>
+            <Image src={Valuation} size='medium' floated='left'/>
+            <Header as='h3'>FOREIGN MARKET VALUATION</Header>
+            <hr style={{
+              width: "40%",
+              border: "1px solid #2185d0",
+            }}/>
+            <Header as='h4'>Positioning products in the right market for success.</Header>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={8}>
+            <Image src={CostumerService} size='medium' floated='left' />
+            <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
+            <Container style={{padding:"0em "}}>
               <hr style={{
                 width: "40%",
                 border: "1px solid #2185d0",
+                right: "1000px"
               }}/>
-              <Header as='h4'>Positioning products in the right market for success.</Header>
+            </Container>
+            <Header as='h4'>Efficient, secure and reliable delveries.</Header>
+          </Grid.Column>
+          <Grid.Column width={8}>
+            <Image src={InternationalSales} size='medium' floated='left'/>
+            <Header as='h3'>OUTSTANDING CUSTOMER SERVICE</Header>
+            <hr style={{
+              width: "40%",
+              border: "1px solid #2185d0",
+              padding: "0em 0em"
+            }}/>
+            <Header as='h4'>We focus on our clients complete trust and satisfaction.</Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
-
 
     <Segment style={{ padding: '8em 0em', backgroundColor:'#666666'}} vertical>
       <Container text textAlign='center'>
