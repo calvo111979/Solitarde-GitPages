@@ -29,14 +29,7 @@ function format_brochures(brochures){
   var name = ""
   const formatted_brochures =
   brochures.map((brochure) =>{
-    if (brochure.name == "silvercote"){
-      if (brochure.name != name) {
-        name = brochure.name
-        return [
-          <List.Item key={brochure.id + "title"} as="h2" >{brochure.name}</List.Item>,
-          <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
-        ];
-      }
+    if (brochure.name == "Silvercote"){
       return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
     }
     return ""
@@ -55,17 +48,17 @@ const ResponsiveContainer = ({ children, urlString }) => (
 
 export default withRouteData(({ brochures }) => (
   <ResponsiveContainer
-    urlString="brochures/Silvercote">
+    urlString="brochures/silvercote">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
-        NUESTROS <span style={{color:"#2185d0"}}>FOLLETOS</span>
+        SILVER<span style={{color:"#2185d0"}}>COTE</span>
         <hr style={{
           width: "10%",
           border: "1px solid #2185d0",
         }}/>
       </Header>
     </Container>
-    <Container text style={{padding: "0em 4em", paddingBottom: "2em"}}>
+    <Container text style={{padding: "0em 4em", paddingBottom: "25em"}}>
       <List size="large">
         {format_brochures(brochures.brochures)}
       </List>

@@ -30,13 +30,6 @@ function format_brochures(brochures){
   const formatted_brochures =
   brochures.map((brochure) =>{
     if (brochure.name == "insudry"){
-      if (brochure.name != name) {
-        name = brochure.name
-        return [
-          <List.Item key={brochure.id + "title"} as="h2" >{brochure.name}</List.Item>,
-          <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
-        ];
-      }
       return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
     }
     return ""
@@ -58,14 +51,14 @@ export default withRouteData(({ brochures }) => (
     urlString="brochures/InsuDry">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
-        NUESTROS <span style={{color:"#2185d0"}}>FOLLETOS</span>
+        INSU<span style={{color:"#2185d0"}}>DRY</span>
         <hr style={{
           width: "10%",
           border: "1px solid #2185d0",
         }}/>
       </Header>
     </Container>
-    <Container text style={{padding: "0em 4em", paddingBottom: "2em"}}>
+    <Container text style={{padding: "0em 4em", paddingBottom: "25em"}}>
       <List size="large">
         {format_brochures(brochures.brochures)}
       </List>
