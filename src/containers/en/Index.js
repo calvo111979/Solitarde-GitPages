@@ -164,7 +164,7 @@ class DesktopContainer extends Component {
                   {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                   {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                   <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                  <Menu.Item style={{ right: '0px'}}>
+                  <Menu.Item as='a' href='/' style={{ right: '0px'}}>
                     <Image src={SideLogo} size='small' />
                   </Menu.Item>
                   <Menu.Item position='right' as='a' href='/'>HOME</Menu.Item>
@@ -270,7 +270,7 @@ class TabletContainer extends Component {
                   {/* <Menu.Item as='a' href='/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
                   {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
                   <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                  <Menu.Item style={{ right: '0px'}}>
+                  <Menu.Item as='a' href='/' style={{ right: '0px'}}>
                     <Image src={SideLogo} size='small' />
                   </Menu.Item>
                   <Menu.Item position='right' as='a' href='/'>HOME</Menu.Item>
@@ -374,7 +374,7 @@ class MobileContainer extends Component {
                     <Icon name='sidebar' size='large' />
                   </Menu.Item>
                   <Menu.Item as='a' href='/es'><Flag name='es' /></Menu.Item>
-                  <Menu.Item position='right'>
+                  <Menu.Item as='a' href='/' position='right'>
                     {/* <Icon name='phone'/> +1-864-498-8691  /
                     <Icon name='mail'/> info@solitrade.com */}
                     <Image src={SimpleLogo} size='mini' />
