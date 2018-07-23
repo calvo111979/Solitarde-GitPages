@@ -45,53 +45,51 @@ const PageLayout = () => (
         }}/>
       </Header>
     </Container>
-    <Grid
-      container
-      stackable
-      style={{ padding: '2em 1em', paddingBottom: "5em" }}
-      columns="2"
-     >
-      <Grid.Row>
-        <Grid.Column>
-          <Image src={Aerial} centered />
-        </Grid.Column>
-        <Grid.Column>
-          <Segment  basic>
-            <Container text style={{paddingRight: "10em"}}>
-            <Header as='h3'>SALES AND MARKETING</Header>
-            <hr style={{
-              width: "10%",
-              border: "1px solid #2185d0",
-              marginLeft: 0,
-              padding: '0% 1em'
-            }}/>
-              <p>
-                Solitrade Group supports customers around the world
-                by offering a robust portfolio of the highest quality building
-                products. By focusing on a seamless customer experience, we
-                ensure that our customers can spend their time focusing on what
-                they do best—build their business.
-              </p>
-             <Header as='h3'>GLOBAL BRAND AND PRODUCT REPRESENTATION</Header>
-             <hr style={{
-               width: "10%",
-               border: "1px solid #2185d0",
-               marginLeft: 0,
-               padding: '0% 1em'
-             }}/>
-             <p>
-               As a global trading group, we carefully screen manufacturers
-                from around the world and compile only the best collection
-                of glass, insulation and other building products. Our goal is
-                to ensure that our clients have all the highest quality products
-                they need to be successful in an increasingly competitive
-                construction marketplace.
-              </p>
-            </Container>
-            </Segment>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+      <Grid
+        container
+        stackable
+        style={{ padding: '2em 1em', paddingBottom: "5em" }}
+        columns="2"
+       >
+        <Grid.Row>
+          <Grid.Column>
+            <Image src={Aerial}/>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment  basic>
+              <Header as='h3'>SALES AND MARKETING</Header>
+              <hr style={{
+                width: "10%",
+                border: "1px solid #2185d0",
+                marginLeft: 0,
+                padding: '0% 1em'
+              }}/>
+                <p>
+                  Solitrade Group supports customers around the world
+                  by offering a robust portfolio of the highest quality building
+                  products. By focusing on a seamless customer experience, we
+                  ensure that our customers can spend their time focusing on what
+                  they do best—build their business.
+                </p>
+               <Header as='h3'>GLOBAL BRAND AND PRODUCT REPRESENTATION</Header>
+               <hr style={{
+                 width: "10%",
+                 border: "1px solid #2185d0",
+                 marginLeft: 0,
+                 padding: '0% 1em'
+               }}/>
+               <p>
+                 As a global trading group, we carefully screen manufacturers
+                  from around the world and compile only the best collection
+                  of glass, insulation and other building products. Our goal is
+                  to ensure that our clients have all the highest quality products
+                  they need to be successful in an increasingly competitive
+                  construction marketplace.
+                </p>
+              </Segment>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     <Footer />
   </ResponsiveContainer>
 

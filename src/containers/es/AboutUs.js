@@ -53,12 +53,10 @@ const PageLayout = () => (
      >
       <Grid.Row>
         <Grid.Column>
-          <Image src={Aerial} centered />
+          <Image src={Aerial}/>
         </Grid.Column>
         <Grid.Column>
           <Segment  basic>
-            <Container text style={{paddingRight: "10em"}}>
-
             <Header as='h3'>VENTAS Y MERCADOTENCIA</Header>
             <hr style={{
               width: "10%",
@@ -90,7 +88,6 @@ const PageLayout = () => (
                    para tener éxito en un mercado de la construcción cada vez
                    más competitivo.
               </p>
-            </Container>
             </Segment>
         </Grid.Column>
       </Grid.Row>

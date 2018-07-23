@@ -107,7 +107,7 @@ class Footer extends Component {
                     <List link inverted>
                       <List.Item as='a' href="/about">About Us</List.Item>
                       <List.Item as='a' href="/products">Products</List.Item>
-                      <List.Item as='a' href="/brochures">Brochures</List.Item>
+                      {/* <List.Item as='a' href="/brochures">Brochures</List.Item> */}
                       <List.Item as='a' href="/community">Our Community</List.Item>
                       <List.Item as='a' href="/contact">Contact</List.Item>
                     </List>

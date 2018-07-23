@@ -38,18 +38,18 @@ class TabletFooter extends Component {
                     <Header inverted as='h4' content='MAPA DE SITIO' />
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
-                      <List.Item as='a' href="/es/productos">Productos</List.Item>
+                      <List.Item as='a' href="/es/products">Productos</List.Item>
                       <List.Item as='a' href="/es/brochures">Folletos</List.Item>
-                      <List.Item as='a' href="/es/comunidad">Nuestra Comunidad</List.Item>
-                      <List.Item as='a' href="/es/contacto">Contacto</List.Item>
+                      <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
+                      <List.Item as='a' href="/es/contact">Contacto</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
                     <Header inverted as='h4' content='PRODUCTOS' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/productos">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as='a' href="/es/productos">Recubrimientos a Prueba de Agua</List.Item>
-                      <List.Item as='a' href="/es/productos">Vidrio y Otros Materiales</List.Item>
+                      <List.Item as='a' href="/es/products">Aislamiento Térmico y Acústico</List.Item>
+                      <List.Item as='a' href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as='a' href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
@@ -104,18 +104,18 @@ class Footer extends Component {
                     <Header inverted as='h4' content='MAPA DE SITIO' />
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
-                      <List.Item as='a' href="/es/productos">Productos</List.Item>
-                      <List.Item as='a' href="/es/brochures">Folletos</List.Item>
-                      <List.Item as='a' href="/es/comunidad">Nuestra Comunidad</List.Item>
-                      <List.Item as='a' href="/es/contacto">Contacto</List.Item>
+                      <List.Item as='a' href="/es/products">Productos</List.Item>
+                      {/* <List.Item as='a' href="/es/brochures">Folletos</List.Item> */}
+                      <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
+                      <List.Item as='a' href="/es/contact">Contacto</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
                     <Header inverted as='h4' content='PRODUCTOS' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/productos">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as='a' href="/es/productos">Recubrimientos a Prueba de Agua</List.Item>
-                      <List.Item as='a' href="/es/productos">Vidrio y Otros Materiales</List.Item>
+                      <List.Item as='a' href="/es/products">Aislamiento Térmico y Acústico</List.Item>
+                      <List.Item as='a' href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as='a' href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
@@ -171,10 +171,10 @@ class MobileFooter extends Component {
                     <Header inverted as='h4' content='MAPA DE SITIO' />
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
-                      <List.Item as='a' href="/es/productos">Productos</List.Item>
+                      <List.Item as='a' href="/es/products">Productos</List.Item>
                       <List.Item as='a' href="/es/brochures">Folletos</List.Item>
-                      <List.Item as='a' href="/es/comunidad">Nuestra Comunidad</List.Item>
-                      <List.Item as='a' href="/es/contacto">Contacto</List.Item>
+                      <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
+                      <List.Item as='a' href="/es/contact">Contacto</List.Item>
                     </List>
                   </Grid.Column>
                   </Grid.Row>
@@ -183,9 +183,9 @@ class MobileFooter extends Component {
                   <Grid.Column width={8}>
                     <Header inverted as='h4' content='PRODUCTOS' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/productos">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as='a' href="/es/productos">Recubrimientos a Prueba de Agua</List.Item>
-                      <List.Item as='a' href="/es/productos">Vidrio y Otros Materiales</List.Item>
+                      <List.Item as='a' href="/es/products">Aislamiento Térmico y Acústico</List.Item>
+                      <List.Item as='a' href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as='a' href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
