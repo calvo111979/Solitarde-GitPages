@@ -434,7 +434,7 @@ const HomepageLayout = () => (
           </Grid.Column>
           <Grid.Column width={8}>
             <Image src={Valuation} size='medium' floated='left'/>
-            <Header as='h3'>FOREIGN MARKET VALUATION</Header>
+            <Header as='h3'>FOREIGN MARKET EVALUATION</Header>
             <hr style={{
               width: "40%",
               border: "1px solid #2185d0",
