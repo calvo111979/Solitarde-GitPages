@@ -57,7 +57,7 @@ const PageLayout = () => (
         </Grid.Column>
         <Grid.Column>
           <Segment  basic>
-            <Container text>
+            <Container text style={{paddingRight: "10em"}}>
 
             <Header as='h3'>VENTAS Y MERCADOTENCIA</Header>
             <hr style={{
