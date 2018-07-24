@@ -30,7 +30,27 @@ function get_link(lenguage){
     return "eventos";
   }
 }
-function format_events(events){
+
+function format_events_html(events){
+  const formatted_events =
+    events.map(event => (
+      <div class="ui card">
+        <div>
+          <img height="210" width="100%" src={path + event.images[0].src} />
+        </div>
+        <div class="content">
+          <a class="header" href={event.name.replace(/\s+/g, '-').toLowerCase() + '/'}>{event.name}</a>
+          <div class="description">
+            {event.description}
+          </div>
+        </div>
+      </div>
+  ))
+
+  return formatted_events
+}
+
+function format_events_props(events){
   const formatted_events =
     events.map(event => (
       {
@@ -70,9 +90,10 @@ export default withRouteData(({ events }) => (
     </Container>
     <Container style={{padding: "0em 4em", paddingBottom: "2em"}}>
       <Card.Group
-        items={format_events(events.events)}
+        // items={format_events_props(events.events)}
         centered
       >
+        {format_events_html(events.events)}
       </Card.Group>
     </Container>
     <Footer />
