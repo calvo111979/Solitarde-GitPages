@@ -44,53 +44,72 @@ class Layout extends React.Component {
 }
 
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container>
     <br/>
     <br/>
     <br/>
     <br/>
     <Image centered src={logo} size='large'/>
-    {/* <Header
-      as='h1'
-      content='SOLITRADE'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '40em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-      }}
+    <Responsive {...Responsive.onlyComputer}>
+      <Grid
+        columns = "2"
+        stackable
+        style = {{padding: "5em 20em"}}
+      >
+        <Grid.Row centered>
+          <Grid.Column style={{textAlign: "center"}}>
+            <Button primary size='big' href="/about">
+              MORE INFO
+            </Button>
+          </Grid.Column>
+          <Grid.Column style={{textAlign: "center"}}>
+            <Button inverted size='big' href="/contact" >
+              CONTACT US
+            </Button>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+  </Responsive>
+  <Responsive {...Responsive.onlyTablet}>
+    <Grid
+      columns = "2"
+      stackable
+      style = {{padding: "5em 10em"}}
     >
-    </Header> */}
-    {/* <Header
-      as='h1'
-      content='BUILT TO HELP YOU BUILD'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    /> */}
-    <br/>
-    <br/>
-    <br/>
-    <Button primary size='big' href="about">
-      MORE INFO
-    </Button>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <Button color='white' inverted size='big' href="contact" >
-      CONTACT US
-    </Button>
+      <Grid.Row centered>
+        <Grid.Column style={{textAlign: "center"}}>
+          <Button primary size='big' href="/about">
+            MORE INFO
+          </Button>
+        </Grid.Column>
+        <Grid.Column style={{textAlign: "center"}}>
+          <Button inverted size='big' href="/contact" >
+            CONTACT US
+          </Button>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+  </Responsive>
+  <Responsive {...Responsive.onlyMobile}>
+    <Grid
+      columns = "2"
+      stackable
+      style = {{padding: "5em 0em"}}
+    >
+      <Grid.Row centered>
+        <Grid.Column style={{textAlign: "center"}}>
+          <Button primary size='big' href="/about">
+            MORE INFO
+          </Button>
+        </Grid.Column>
+        <Grid.Column style={{textAlign: "center"}}>
+          <Button inverted size='big' href="/contact" >
+            CONTACT US
+          </Button>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+  </Responsive>
   </Container>
 )
 
@@ -424,7 +443,7 @@ const HomepageLayout = () => (
       <Grid container stackable >
         <Grid.Row>
           <Grid.Column width={8}>
-            <Image src={GlogalLogistics} size='medium' floated='left'/>
+            <Image src={InternationalSales} size='medium' floated='left'/>
             <Header as='h3'>INTERNATIONAL SALES AND MARKETING</Header>
             <hr style={{
               width: "40%",
@@ -444,7 +463,7 @@ const HomepageLayout = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Image src={CostumerService} size='medium' floated='left' />
+            <Image src={GlogalLogistics} size='medium' floated='left'/>
             <Header as='h3'>GLOBAL LOGISTICS EXPERTISE</Header>
             <Container style={{padding:"0em "}}>
               <hr style={{
@@ -456,7 +475,7 @@ const HomepageLayout = () => (
             <Header as='h4'>Efficient, secure and reliable delveries.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            <Image src={InternationalSales} size='medium' floated='left'/>
+            <Image src={CostumerService} size='medium' floated='left' />
             <Header as='h3'>OUTSTANDING CUSTOMER SERVICE</Header>
             <hr style={{
               width: "40%",
