@@ -39,9 +39,9 @@ function format_events_html(events){
           <img height="210" width="100%" src={path + event.images[0].src} />
         </div>
         <div class="content">
-          <a class="header" href={event.name.replace(/\s+/g, '-').toLowerCase() + '/'}>{event.name}</a>
+          <a class="header" href={event.name.replace(/\s+/g, '-').toLowerCase() + '/'}>{event.es_name}</a>
           <div class="description">
-            {event.description}
+            {event.es_description}
           </div>
         </div>
       </div>
