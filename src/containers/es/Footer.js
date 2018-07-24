@@ -39,7 +39,7 @@ class TabletFooter extends Component {
                     <List link inverted>
                       <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/products">Productos</List.Item>
-                      <List.Item as='a' href="/es/brochures">Folletos</List.Item>
+                      {/* <List.Item as='a' href="/es/brochures">Folletos</List.Item> */}
                       <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
                       <List.Item as='a' href="/es/contact">Contacto</List.Item>
                     </List>
@@ -170,9 +170,9 @@ class MobileFooter extends Component {
                   <Grid.Column width={8}>
                     <Header inverted as='h4' content='MAPA DE SITIO' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/sobre">Sobre Nosotros</List.Item>
+                      <List.Item as='a' href="/es/about">Sobre Nosotros</List.Item>
                       <List.Item as='a' href="/es/products">Productos</List.Item>
-                      <List.Item as='a' href="/es/brochures">Folletos</List.Item>
+                      {/* <List.Item as='a' href="/es/brochures">Folletos</List.Item> */}
                       <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
                       <List.Item as='a' href="/es/contact">Contacto</List.Item>
                     </List>
