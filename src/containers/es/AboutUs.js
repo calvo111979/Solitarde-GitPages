@@ -57,7 +57,7 @@ const PageLayout = () => (
         </Grid.Column>
         <Grid.Column>
           <Segment  basic>
-            <Header as='h3'>VENTAS Y MERCADOTENCIA</Header>
+            <Header as='h3'>VENTAS Y MERCADOTECNIA</Header>
             <hr style={{
               width: "10%",
               border: "1px solid #2185d0",
