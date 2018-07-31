@@ -115,7 +115,7 @@ export default class extends React.Component {
                          </Grid.Column>
                          <Grid.Column style={{ padding: '1em 0em' }}>
                            <Icon name='point' color='blue' size='big'/>
-                            CHARLOTTE, SC 28203 (USA)
+                            CHARLOTTE, NC 28203 (USA)
                          </Grid.Column>
                  </Grid.Column>
              </Grid.Row>

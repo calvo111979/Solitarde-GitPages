@@ -66,7 +66,7 @@ class TabletFooter extends Component {
                       </List.Item>
                       <List.Item>
                         <Icon name='point' />
-                         CHARLOTTE, SC 28203 (USA)
+                         CHARLOTTE, NC 28203 (USA)
                       </List.Item>
                     </List>
                   </Grid.Column>
@@ -133,7 +133,7 @@ class Footer extends Component {
                       </List.Item>
                       <List.Item>
                         <Icon name='point' />
-                         CHARLOTTE, SC 28203 (USA)
+                         CHARLOTTE, NC 28203 (USA)
                       </List.Item>
                     </List>
                   </Grid.Column>
@@ -203,7 +203,7 @@ class MobileFooter extends Component {
                       </List.Item>
                       <List.Item>
                         <Icon name='point' />
-                         CHARLOTTE, SC 28203 (USA)
+                         CHARLOTTE, NC 28203 (USA)
                       </List.Item>
                     </List>
                   </Grid.Column>
