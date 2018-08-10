@@ -190,14 +190,16 @@ class DesktopContainer extends Component {
                   <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                   <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                   <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
-                  <Dropdown text='FOLLETOS' pointing className='link item'>
+                  <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
+
+                  {/* <Dropdown text='FOLLETOS' pointing className='link item'>
                     <Dropdown.Menu>
                       <Dropdown.Item href='/es/brochures/Garland'>GARLAND</Dropdown.Item>
                       <Dropdown.Item href='/es/brochures/InsuDry'>INSUDRY</Dropdown.Item>
                       <Dropdown.Item href='/es/brochures/Knauf'>KNAUF</Dropdown.Item>
                       <Dropdown.Item href='/es/brochures/Silvercote'>SILVERCOTE</Dropdown.Item>
                     </Dropdown.Menu>
-                  </Dropdown>
+                  </Dropdown> */}
                   <Dropdown text='COMUNIDAD' pointing className='link item'>
                     <Dropdown.Menu>
                       <Dropdown.Item href='/es/community'>COMUNIDAD</Dropdown.Item>
@@ -296,6 +298,8 @@ class TabletContainer extends Component {
                   <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                   <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                   <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
+                  <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
+                  {/*
                   <Dropdown text='FOLLETOS' pointing className='link item'>
                     <Dropdown.Menu>
                       <Dropdown.Item href='/es/brochures/Garland'>GARLAND</Dropdown.Item>
@@ -303,7 +307,7 @@ class TabletContainer extends Component {
                       <Dropdown.Item href='/es/brochures/Knauf'>KNAUF</Dropdown.Item>
                       <Dropdown.Item href='/es/brochures/Silvercote'>SILVERCOTE</Dropdown.Item>
                     </Dropdown.Menu>
-                  </Dropdown>
+                  </Dropdown> */}
                   <Dropdown text='COMUNIDAD' pointing className='link item'>
                     <Dropdown.Menu>
                       <Dropdown.Item href='/es/community'>COMUNIDAD</Dropdown.Item>
@@ -361,6 +365,8 @@ class MobileContainer extends Component {
             <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
             <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
             <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
+            <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
+            {/*
             <Dropdown text='FOLLETOS' pointing className='link item'>
               <Dropdown.Menu>
                 <Dropdown.Item href='/es/brochures/Garland'>GARLAND</Dropdown.Item>
@@ -368,7 +374,7 @@ class MobileContainer extends Component {
                 <Dropdown.Item href='/es/brochures/Knauf'>KNAUF</Dropdown.Item>
                 <Dropdown.Item href='/es/brochures/Silvercote'>SILVERCOTE</Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown>
+            </Dropdown> */}
             <Menu.Item href='/es/community'>COMUNIDAD</Menu.Item>
             <Menu.Item href='/es/events'>EVENTOS</Menu.Item>
             <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>

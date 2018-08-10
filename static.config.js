@@ -80,6 +80,10 @@ export default {
             })),
           },
           {
+            path: '/brochures',
+            component: 'src/containers/en/Brochures',
+          },
+          {
             path: '/brochures/garland',
             component: 'src/containers/en/Garland',
             getData: () => ({
@@ -143,6 +147,10 @@ export default {
                 event,
               }),
             })),
+          },
+          {
+            path: '/brochures',
+            component: 'src/containers/es/Brochures',
           },
           {
             path: '/brochures/garland',

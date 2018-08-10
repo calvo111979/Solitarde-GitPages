@@ -7,10 +7,10 @@ import {
   Grid,
   Header,
   Icon,
+  Card,
   Image,
   List,
   Menu,
-  Card,
   Responsive,
   Segment,
   Sidebar,
@@ -44,7 +44,7 @@ const PageLayout = () => (
     urlString="brochures">
     <Container text textAlign='center'>
       <Header as='h1' style={{ fontSize: '2em', padding:"0em 0em", paddingTop: "2em" }}>
-        FOL<span style={{color:"#2185d0"}}>LETOS</span>
+        BRO<span style={{color:"#2185d0"}}>CHURES</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
           width: "10%",
@@ -61,16 +61,16 @@ const PageLayout = () => (
      >
       <Grid.Row>
         <Grid.Column>
-          <Image href='/es/brochures/knauf' centered src={Knauf} size='huge' />
+          <Image href='/brochures/knauf' centered src={Knauf} size='huge' />
         </Grid.Column>
         <Grid.Column>
-          <Image href='/es/brochures/silvercote' centered src={Silvercote} size='huge' />
+          <Image href='/brochures/silvercote' centered src={Silvercote} size='huge' />
         </Grid.Column>
         <Grid.Column>
-        <Image href='/es/brochures/insudry' centered src={Insudry} size='huge' />
+        <Image href='/brochures/insudry' centered src={Insudry} size='huge' />
         </Grid.Column>
         <Grid.Column>
-          <Image href='/es/brochures/garland' centered src={Garland} size='huge' style={{ padding: '0em -30em' }}/>
+          <Image href='/brochures/garland' centered src={Garland} size='huge' style={{ padding: '0em -30em' }}/>
         </Grid.Column>
       </Grid.Row>
     </Grid>
