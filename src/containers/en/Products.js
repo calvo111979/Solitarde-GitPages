@@ -74,10 +74,10 @@ const PageLayout = () => (
                 <Grid>
                   <Grid.Row columns={2}>
                     <Grid.Column>
-                      <Image centered src={Knauf} size='huge' />
+                      <Image href="http://www.knauf.es/" centered src={Knauf} size='huge' />
                     </Grid.Column>
                     <Grid.Column>
-                      <Image centered src={Silvercote} size='huge' />
+                      <Image href="https://www.silvercote.com/" centered src={Silvercote} size='huge' />
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -99,10 +99,10 @@ const PageLayout = () => (
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image centered src={Insudry} size='huge' />
+                  <Image href="http://insudry.com/" centered src={Insudry} size='huge' />
                 </Grid.Column>
                 <Grid.Column>
-                  <Image centered src={Garland} size='huge' style={{ padding: '0em -30em' }}/>
+                  <Image href="https://www.gmxco.com/about/about-us.html" centered src={Garland} size='huge' style={{ padding: '0em -30em' }}/>
                 </Grid.Column>
               </Grid.Row>
             </Grid>

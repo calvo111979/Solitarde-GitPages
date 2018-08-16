@@ -60,7 +60,7 @@ const PageLayout = () => (
      >
       <Grid.Row>
         <Grid.Column>
-          <Image src={Insulation} centered size='large'/>
+          <Image href="http://insudry.com/" src={Insulation} centered size='large'/>
           <Segment basic >
               <Header as='h3'>AISLAMIENTO TÉRMICO Y ACÚSTICO</Header>
               <hr style={{
@@ -74,10 +74,10 @@ const PageLayout = () => (
                 <Grid>
                   <Grid.Row columns={2}>
                     <Grid.Column>
-                      <Image centered src={Knauf} size='huge' />
+                      <Image href="http://www.knauf.es/" centered src={Knauf} size='huge' />
                     </Grid.Column>
                     <Grid.Column>
-                      <Image centered src={Silvercote} size='huge' />
+                      <Image href="https://www.silvercote.com/" centered src={Silvercote} size='huge' />
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -99,10 +99,10 @@ const PageLayout = () => (
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image centered src={Insudry} size='huge' />
+                  <Image href="http://insudry.com/" centered src={Insudry} size='huge' />
                 </Grid.Column>
                 <Grid.Column>
-                  <Image centered src={Garland} size='huge'/>
+                  <Image href="https://www.gmxco.com/about/about-us.html" centered src={Garland} size='huge'/>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
