@@ -29,7 +29,7 @@ function format_brochures(brochures){
   var name = ""
   const formatted_brochures =
   brochures.map((brochure) =>{
-    if (brochure.name == "insudry"){
+    if (brochure.name == "InsuDry"){
       return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
     }
     return ""
