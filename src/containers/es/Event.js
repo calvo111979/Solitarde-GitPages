@@ -37,9 +37,11 @@ function format_images_slider(images_json){
 
   return images
 }
-const ResponsiveContainer = ({ children }) => (
+const ResponsiveContainer = ({ children, urlString }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer
+      urlString={urlString}
+      >{children}</DesktopContainer>
   </div>
 )
 
@@ -58,7 +60,9 @@ function format_images_gallery(images_json){
 }
 
 export default withRouteData(({ event }) => (
-    <ResponsiveContainer>
+    <ResponsiveContainer
+      urlString={"events/" + event.name.replace(/\s+/g, '-').toLowerCase()}
+    >
       <Container text textAlign='center'>
         <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
           {event.es_name}
